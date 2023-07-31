@@ -17,4 +17,6 @@ npx create-next-app -e https://github.com/shadcn/next-template
 - Dark mode with `next-themes`
 - Tailwind CSS class sorting, merging and linting.
 
+## License
 
+Licensed under the [GNU license](https://github.com/AChristoff/alexhristov/blob/main/LICENSE).
