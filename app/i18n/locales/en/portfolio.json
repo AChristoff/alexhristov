@@ -1,3 +1,114 @@
 {
-  "title": "Portfolio"
+  "title": "Portfolio",
+  "technologies": "Technologies",
+  "cards": [
+    {
+      "img": "childish-ai.png",
+      "title": "Childish.ai",
+      "description": "Next.js / Typescript / MUI / Redux - Toolkit",
+      "buttons": [
+        {
+          "link": "https://childish.ai/",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "fabrico.png",
+      "title": "Fabrico",
+      "description": "React / Typescript / MUI / Redux - Toolkit",
+      "buttons": [
+        {
+          "link": "https://www.fabrico.io/",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "atos-mep.png",
+      "title": "Atos MEP",
+      "description": "React / Typescript / Redux / Sass / Jest",
+      "buttons": [
+        {
+          "link": "https://appsource.microsoft.com/en-us/product/web-apps/atosinternationalsas.atos_market_execution_platform?tab=overview",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "cola.png",
+      "title": "Image Recognition Tool",
+      "description": "React / Redux / MUI",
+      "buttons": [
+        {
+          "link": "https://atos.net/en/solutions/internet-of-things-iot/connected-cooler",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "campic-bg.png",
+      "title": "Campic-bg",
+      "description": "MERN & Redux",
+      "buttons": [
+        {
+          "link": "https://www.campic-bg.com/",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "casita-logo.png",
+      "title": "Business Website",
+      "description": "Vue.js & Sass",
+      "buttons": [
+        {
+          "link": "https://casita-bg.com/",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "nete-logo.png",
+      "title": "NETERRA Landing page",
+      "description": "JavaScript, HTML, CSS",
+      "buttons": [
+        {
+          "link": "https://neterra.net/business-services/",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "gift-card.png",
+      "title": "Gift Card story",
+      "description": "Vue.js & Sass",
+      "buttons": [
+        {
+          "link": "https://neterra.tv/gift-card",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    },
+    {
+      "img": "ecta-logo.png",
+      "title": "ECTA 2020 landing page",
+      "description": "JavaScript, HTML, CSS",
+      "buttons": [
+        {
+          "link": "https://www.ectacountryfocus.eu/",
+          "title": "View project",
+          "class": "view-btn"
+        }
+      ]
+    }
+  ]
 }

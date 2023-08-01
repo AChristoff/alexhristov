@@ -32,6 +32,7 @@ const HomePage = async ({ params }: Props) => {
           height={0}
           sizes="100vw"
           placeholder="blur"
+          className='rounded-full'
         />
         <h6 className="flex flex-wrap items-center justify-center uppercase tracking-[3px] font-semibold text-[0.8rem] md:text-[0.9rem]">
           <span className="text-muted-foreground">{t('more')}</span>
