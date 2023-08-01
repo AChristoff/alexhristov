@@ -1,3 +1,135 @@
 {
-  "title": "About"
+  "title": "About me",
+  "generalInfo": "As a professional with a proven track record, strong analytical skills and exceptional attention to detail, I am dedicated to meeting deadlines and delivering top-notch results. I am a motivated self-starter with a team-oriented mindset who maintains high standards in all aspects of my work. I am passionate about continuous learning and development, and am always eager to expand my skill set in order to excel in my role.",
+  "contacts": {
+    "title": "Contacts",
+    "address": {
+      "title": "Address",
+      "address": "Sofia, Bulgaria"
+    },
+    "phone": "Phone",
+    "email": "E-mail"
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "languages": {
+    "title": "Languages",
+    "en": "English",
+    "bg": "Bulgarian"
+  },
+  "cv": {
+    "title": "Download CV"
+  },
+  "workHistory": {
+    "title": "Work History",
+    "jobs": {
+      "childish": {
+        "title": "Lead Front-End Developer - React (Next.js) | React Native (Expo) | TypeScript",
+        "employer": "Childish Ltd.",
+        "period": "2022 - Present",
+        "link": "https://childish.ai/",
+        "description": [
+          "Designing and developing new features and functionality or improving old ones for existing systems.",
+          "Providing technical support for web applications, systems, and infrastructure as needed.",
+          "Collaborating with other members of the development team to ensure that all components of an application meet functional and design requirements.",
+          "Debugging code to find and fix errors in existing applications.",
+          "Testing new features to ensure that they function properly.",
+          "Creating prototypes of new applications or features to demonstrate potential functionality to stakeholders.",
+          "Communicating with clients or other team members to clarify details about project objectives and requirements.",
+          "Conducting code reviews to ensure that new code follows best practices.",
+          "Using various operating systems.",
+          "Writing code using specific programming languages and tools such as: ",
+          "React | Next.js | React Native | Redux | TypeScript | JavaScript | CSS3 | Sass | Tailwind | MUI | Bootstrap | HTML5 | React Testing Library | Git | Scrum | Linux"
+        ]
+      },
+      "atos": {
+        "title": "Front-End Developer - React",
+        "employer": "Atos Bulgaria",
+        "period": "2021 - 2022",
+        "link": "https://atos.net/bg/bulgaria/atos-bulgaria-competency-center",
+        "description": [
+          "Develop the Front-end of software that automate and improve the business processes of large corporations such as Coca-Cola!",
+          "JavaScript/React-Redux | CSS3/Sass | HTML5",
+          "Responsive Design",
+          "Version Control Management with Git  ",
+          "Excellent communication with the PM & QA teams",
+          "Planning sprints using Scrum based methodology"
+        ]
+      },
+      "neterra": {
+        "title": "Front-End Developer - Vue/jQuery",
+        "employer": "NETERRA Ltd.",
+        "period": "2019 - 2021",
+        "link": "https://neterra.net",
+        "description": [
+          "Develop the Front-end of Enterprise Resource Planning Software ERP",
+          "Develop Landing Pages for company events",
+          "JavaScript/Vue | CSS/Sass | HTML",
+          "Bootstrap | jQuery",
+          "Responsive Design",
+          "Strong Git management",
+          "Excellent communication with QA team",
+          "Planning sprints using Scrum based methodology"
+        ]
+      },
+      "walltopia": {
+        "title": "Project Manager | Team lead | Drafter",
+        "employer": "WALLTOPIA AD",
+        "period": "2014 - 2019",
+        "link": "https://walltopia.com",
+        "pm": {
+          "title": "Project Manager",
+          "time": "1Y",
+          "description": [
+            "Complete organization of the project timeline from beginning to end",
+            "Keeping in touch with customers",
+            "Presence at management briefings with completed reports",
+            "Requesting and selecting transport for all materials",
+            "Providing tickets, lodgings and machines needed for technicians in different countries",
+            "Available for permanent contact with groups of technicians 24/7",
+            "Working in a dynamic and multicultural environment"
+          ]
+        },
+        "teamLead": {
+          "title": "Team lead",
+          "time": "3Y",
+          "description": [
+            "Drawing up work schedules and task assignments for department employees",
+            "Weekly presence at management briefings with completed work reports",
+            "Preparation of complete technical documentation - production and installation drawings accompanied by detailed specifications for production, loading and assembly",
+            "Quality control of the entire production of the department",
+            "Process Management - analyzing, automating and improving workflows to: increase productivity and reduce the possibility of errors",
+            "Research and development (R & D) - creating new products and details. Implementing new technologies and refining existing ones. Testing and communicating with international laboratories to certify new products",
+            "Daily consultations with employees in the department of urgent cases in their work",
+            "In constant contact with the following departments: Engineering, Design, Project Management, Logistics and Walltopia Plants, on issues related to current and future objects",
+            "Permanent work with design, architecture, engineering, administration software - such as AutoCAD, AdvanceSteel, SketchUp, Excel, SAP and others"
+          ]
+        },
+        "drafter": {
+          "title": "Drafter",
+          "time": "1Y",
+          "description": [
+            "Preparation of complete technical documentation",
+            "R & D - creating new products and details",
+            "Project communication with foreign clients",
+            "Permanent work with design, architecture, engineering, administration software - such as AutoCAD, AdvanceSteel, SketchUp, Excel, SAP and more"
+          ]
+        }
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "softUni": {
+      "specialty": "JavaScript Web Developer",
+      "period": "2018 - 2020",
+      "university": "SoftUni"
+    },
+    "forestry": {
+      "specialty": "Furniture Design & Engineering",
+      "period": "2006 - 2010",
+      "university": "University of Forestry"
+    }
+  }
 }

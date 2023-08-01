@@ -23,9 +23,9 @@ export function MainNav({ items, lng }: MainNavProps) {
   }, [])
 
   return (
-    <div className="mr-5 flex flex-1 justify-between">
+    <div className="mr-2 flex flex-1 justify-between">
       <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="h-8" />
+        <Icons.logo className="h-9" />
       </Link>
       {items?.length ? (
         <nav className="flex gap-6 w-auto">
@@ -36,7 +36,7 @@ export function MainNav({ items, lng }: MainNavProps) {
                   key={index}
                   href={`/${activeLand}${item.href}`}
                   className={cn(
-                    "uppercase flex items-center text-sm font-medium text-muted-foreground",
+                    "uppercase flex items-center text-sm font-medium text-muted-foreground hover:text-primary",
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >

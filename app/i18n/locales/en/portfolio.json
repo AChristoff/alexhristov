@@ -9,8 +9,7 @@
       "buttons": [
         {
           "link": "https://childish.ai/",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -21,8 +20,7 @@
       "buttons": [
         {
           "link": "https://www.fabrico.io/",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -33,8 +31,7 @@
       "buttons": [
         {
           "link": "https://appsource.microsoft.com/en-us/product/web-apps/atosinternationalsas.atos_market_execution_platform?tab=overview",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -45,8 +42,7 @@
       "buttons": [
         {
           "link": "https://atos.net/en/solutions/internet-of-things-iot/connected-cooler",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -57,8 +53,7 @@
       "buttons": [
         {
           "link": "https://www.campic-bg.com/",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -69,8 +64,7 @@
       "buttons": [
         {
           "link": "https://casita-bg.com/",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -81,8 +75,7 @@
       "buttons": [
         {
           "link": "https://neterra.net/business-services/",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -93,8 +86,7 @@
       "buttons": [
         {
           "link": "https://neterra.tv/gift-card",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     },
@@ -105,8 +97,7 @@
       "buttons": [
         {
           "link": "https://www.ectacountryfocus.eu/",
-          "title": "View project",
-          "class": "view-btn"
+          "title": "View project"
         }
       ]
     }

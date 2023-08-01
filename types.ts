@@ -7,6 +7,5 @@ export type PortfolioCard = {
   buttons: {
     link: string
     title: string
-    class: string
   }[]
 }
