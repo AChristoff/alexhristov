@@ -1,7 +1,15 @@
+import { useTranslation } from "@/app/i18n"
 
-const AboutPage = () => {
+type Props = {
+  params: {
+    lng: string
+  }
+}
+
+const AboutPage = async ({ params }: Props) => {
+  const { t } = await useTranslation(params?.lng, 'about')
   return (
-    <div>About</div>
+    <h1>{t('title')}</h1>
   )
 }
 
