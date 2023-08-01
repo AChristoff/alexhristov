@@ -6,15 +6,24 @@ export const siteConfig = {
     "At my website you can find my resume, portfolio and contacts © Aleksov",
   mainNav: [
     {
-      title: "Home",
+      title: {
+        en: "Home",
+        bg: "Начало",
+      },
       href: "/",
     },
     {
-      title: "About",
+      title: {
+        en: "About",
+        bg: "За мен",
+      },
       href: "/about",
     },
     {
-      title: "Portfolio",
+      title: {
+        en: "Portfolio",
+        bg: "Портфолио",
+      },
       href: "/portfolio",
     },
   ],

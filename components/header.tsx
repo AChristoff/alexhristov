@@ -1,14 +1,15 @@
 import { siteConfig } from "@/config/site"
 import { MainNav } from "@/components/main-nav"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { Lang } from "@/types"
 
 import LanguageSwitcher from "./language-switcher"
 
-export function Header() {
+export function Header({lng}: {lng: Lang}) {
   return (
     <header className="sticky top-0 z-40 w-full border-b">
-      <section className="container flex flex-1 items-center space-x-4 h-16">
-        <MainNav items={siteConfig.mainNav} />
+      <section className="md:container md:mx-auto flex flex-1 items-center space-x-4 h-16 px-2">
+        <MainNav items={siteConfig.mainNav} lng={lng} />
         <section className="flex items-center space-x-1">
           <ThemeToggle />
           <LanguageSwitcher />
@@ -17,34 +18,3 @@ export function Header() {
     </header>
   )
 }
-
-/* <Link
-      href={siteConfig.links.github}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <div
-        className={buttonVariants({
-          size: "icon",
-          variant: "ghost",
-        })}
-      >
-        <Icons.gitHub className="h-5 w-5" />
-        <span className="sr-only">GitHub</span>
-      </div>
-    </Link>
-    <Link
-      href={siteConfig.links.twitter}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <div
-        className={buttonVariants({
-          size: "icon",
-          variant: "ghost",
-        })}
-      >
-        <Icons.twitter className="h-5 w-5 fill-current" />
-        <span className="sr-only">Twitter</span>
-      </div>
-    </Link> */

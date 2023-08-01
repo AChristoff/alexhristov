@@ -1,8 +1,8 @@
-import Link from "next/link"
+import Image from 'next/image'
+import Link from 'next/link'
+import cover from '@/public/assets/home-cover.png'
 
-import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
-import { useTranslation } from "@/app/i18n"
+import { useTranslation } from '@/app/i18n'
 
 type Props = {
   params: {
@@ -11,39 +11,34 @@ type Props = {
 }
 
 const HomePage = async ({ params }: Props) => {
-
   const { t } = await useTranslation(params?.lng, 'home')
 
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1>{t('title')}</h1>
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Beautifully designed components <br className="hidden sm:inline" />
-          built with Radix UI and Tailwind CSS.
+    <section className="grid items-center gap-6 pb-8 pt-6 md:py-10">
+      <div className="flex flex-col gap-2 items-center">
+        <h6 className="text-center uppercase tracking-[3px] font-semibold text-[0.8rem] md:text-[0.9rem] ">
+          {t('hello')}
+        </h6>
+        <h1 className="text-center uppercase font-semibold leading-tight text-3xl md:text-4xl tracking-[3px]">
+          {t('name')}
         </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Accessible and customizable components that you can copy and paste
-          into your apps. Free. Open Source. And Next.js 13 Ready.
+        <p className="text-center border-y py-4 mt-3 text-muted-foreground w-full">
+          {t('jobTitle')}
         </p>
-      </div>
-      <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
+        <Image
+          src={cover}
+          alt="Profile"
+          width={0}
+          height={0}
+          sizes="100vw"
+          placeholder="blur"
+        />
+        <h6 className="flex flex-wrap items-center justify-center uppercase tracking-[3px] font-semibold text-[0.8rem] md:text-[0.9rem]">
+          <span className="text-muted-foreground">{t('more')}</span>
+          <Link className="ml-2" href={'/about'}>
+            {t('link')}
+          </Link>
+        </h6>
       </div>
     </section>
   )

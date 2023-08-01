@@ -1,5 +1,8 @@
 export interface NavItem {
-  title: string
+  title: {
+    en: string
+    bg: string
+  }
   href?: string
   disabled?: boolean
   external?: boolean

@@ -6,12 +6,14 @@ import { useEffect, useState } from "react"
 import { NavItem } from "@/types/nav"
 import { Icons } from "@/config/icons"
 import { cn } from "@/lib/utils"
+import { Lang } from "@/types"
 
 interface MainNavProps {
   items?: NavItem[]
+  lng: Lang
 }
 
-export function MainNav({ items }: MainNavProps) {
+export function MainNav({ items, lng }: MainNavProps) {
 
   const [activeLand, setActiveLand] = useState("")
 
@@ -38,7 +40,7 @@ export function MainNav({ items }: MainNavProps) {
                     item.disabled && "cursor-not-allowed opacity-80"
                   )}
                 >
-                  {item.title}
+                  {item.title[lng]}
                 </Link>
               )
           )}
