@@ -10,6 +10,7 @@ import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 import { languages } from '../i18n/settings'
 import { Lang } from "@/types"
+import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: {
@@ -53,8 +54,9 @@ export default function RootLayout({
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
-              <Header lng={lng} />
+              <Header />
               <main className="container flex-1">{children}</main>
+              <Footer />
             </div>
             <TailwindIndicator />
           </ThemeProvider>
