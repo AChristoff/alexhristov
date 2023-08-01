@@ -66,6 +66,7 @@ export function MainNav({ items, lng }: MainNavProps) {
                   <Link
                     key={index}
                     href={`/${activeLang}${item.href}`}
+                    onClick={() => setMobileNavOpen(false)}
                     className={cn(
                       'uppercase flex items-center text-sm font-medium text-muted-foreground hover:text-primary',
                       item.disabled && 'cursor-not-allowed opacity-80'
