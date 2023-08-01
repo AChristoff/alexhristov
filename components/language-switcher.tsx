@@ -1,21 +1,19 @@
-"use client"
+'use client'
 
-import { useEffect, useState } from "react"
-import Link from "next/link"
-import { Globe } from "lucide-react"
+import { useRouter } from 'next/navigation'
+import { Globe } from 'lucide-react'
 
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { languages } from "@/app/i18n/settings"
+} from '@/components/ui/dropdown-menu'
 
-import { Button } from "./ui/button"
+import { Button } from './ui/button'
 
 const LanguageSwitcher = () => {
-
+  const router = useRouter()
 
   return (
     <>
@@ -26,16 +24,18 @@ const LanguageSwitcher = () => {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-          {languages.map((loc: string) => (
-            <DropdownMenuItem key={loc} onClick={() => {}}>
-              <Link
-                href={`/${loc}`}
-                className="flex items-center space-x-2"
-              >
-                <span>{loc === "bg" ? "Български" : "English"}</span>
-              </Link>
-            </DropdownMenuItem>
-          ))}
+          <DropdownMenuItem
+            onClick={() => router.push('/en')}
+            className="flex items-center space-x-2"
+          >
+            <span>{'English'}</span>
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={() => router.push('/bg')}
+            className="flex items-center space-x-2"
+          >
+            <span>{'Български'}</span>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </>

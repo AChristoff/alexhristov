@@ -1,7 +1,39 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import cover from '@/public/assets/about-cover.png'
 
+import { Icons } from '@/config/icons'
+import Rating from '@/components/rating'
 import { useTranslation } from '@/app/i18n'
+
+const skills = [
+  { technology: 'JavaScript', stars: 5 },
+  { technology: 'TypeScript', stars: 4 },
+  { technology: 'HTML5', stars: 5 },
+  { technology: 'CSS3', stars: 5 },
+  { technology: 'Sass', stars: 4 },
+  { technology: 'React', stars: 5 },
+  { technology: 'NextJS', stars: 4 },
+  { technology: 'React Native', stars: 4 },
+  { technology: 'Redux', stars: 2 },
+  { technology: 'NodeJS', stars: 3 },
+  { technology: 'Express', stars: 3 },
+  { technology: 'Mongo', stars: 4 },
+  { technology: 'Linux', stars: 4 },
+  { technology: 'Rest API', stars: 5 },
+  { technology: 'Scrum', stars: 3 },
+  { technology: 'Git', stars: 5 },
+  { technology: 'Jira', stars: 5 },
+  { technology: 'Bootstrap', stars: 5 },
+  { technology: 'Tailwind', stars: 4 },
+  { technology: 'MUI', stars: 5 },
+  { technology: 'jQuery', stars: 3 },
+  { technology: 'VueJS', stars: 3 },
+]
+
+export const metadata: Metadata = {
+  title: 'About',
+}
 
 type Props = {
   params: {
@@ -11,12 +43,20 @@ type Props = {
 
 const AboutPage = async ({ params }: Props) => {
   const { t } = await useTranslation(params?.lng, 'about')
+
+  const childish: any[] = t('workHistory.jobs.childish.description', { returnObjects: true })
+  const atos: any[] = t('workHistory.jobs.atos.description', { returnObjects: true })
+  const neterra: any[] = t('workHistory.jobs.neterra.description', { returnObjects: true })
+  const walltopiaPM: any[] = t('workHistory.jobs.walltopia.pm.description', { returnObjects: true })
+  const walltopiaLead: any[] = t('workHistory.jobs.walltopia.teamLead.description', { returnObjects: true })
+  const walltopiaDrafter: any[] = t('workHistory.jobs.walltopia.drafter.description', { returnObjects: true })
+
   return (
-    <div className="about">
+    <div className="about mb-20">
       <h1 className="mt-10 mb-3 text-center uppercase font-semibold leading-tight text-xl md:text-2xl tracking-[3px]">
         {t('title')}
       </h1>
-
+      {/* Cover */}
       <section className="about-cover">
         <Image
           src={cover}
@@ -25,231 +65,183 @@ const AboutPage = async ({ params }: Props) => {
           height={0}
           sizes="100vw"
           placeholder="blur"
-          className='rounded-md overflow-hidden mx-auto'
+          className="rounded-md overflow-hidden mx-auto"
         />
       </section>
-
-      <section className="my-7 max-w-4xl mx-auto text-stale-800">{t('generalInfo')}</section>
-
-      {/* <section className="main-info">
-        <div className="left-col">
+      {/* Summary */}
+      <section className="mt-7 mb-10 max-w-4xl mx-auto text-stale-800">
+        {t('generalInfo')}
+      </section>
+      {/* CV */}
+      <section className="grid grid-cols-12 gap-10">
+        {/* Left column */}
+        <div className="col-span-12 md:col-span-4 lg:col-span-3">
           <section className="contacts">
-            <h5 className="about-subtitles">
-              <span className="about-icons">
-                <FaUserTie />
+            <h5 className="flex mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
+              <span className="flex items-center p-[0.6rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
+                <Icons.contacts className="text-secondary mt-[-2px]" />
               </span>
-              {about.contacts.title}
+              {t('contacts.title')}
             </h5>
             <ul>
-              <li>{about.contacts.address.title}</li>
-              <li>{about.contacts.address.address}</li>
-              <li>{about.contacts.phone}</li>
-              <li>+359 888 199 889</li>
-              <li>{about.contacts.email}</li>
+              <li className="font-semibold">{t('contacts.address.title')}</li>
+              <li className="mb-2">{t('contacts.address.address')}</li>
+              <li className="font-semibold">{t('contacts.phone')}</li>
+              <li className="w-full whitespace-nowrap mb-2">
+                +359 888 199 889
+              </li>
+              <li className="font-semibold">{t('contacts.email')}</li>
               <li>
-                <img src="/assets/img/email.svg" alt="mail" />
+                <Icons.email className="h-5 w-auto" />
               </li>
             </ul>
           </section>
 
           <section className="skills">
-            <h5 className="about-subtitles">
-              <span className="about-icons">
-                <FaPuzzlePiece />
+            <h5 className="flex mt-10 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
+              <span className="flex items-center p-[0.5rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
+                <Icons.pizzle className="text-secondary mt-[-2px] mr-[-2px]" />
               </span>
-              {about.skills.title}
+              {t('skills.title')}
             </h5>
 
-            <ul className="rating-list">
-              <li>
-                <span>JavaScript</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>TypeScript</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>HTML5</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>CSS3</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>Sass</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>React</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>NextJS</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>React Native</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>Redux</span> <Rating stars="2" />
-              </li>
-              <li>
-                <span>NodeJS</span> <Rating stars="3" />
-              </li>
-              <li>
-                <span>Express</span> <Rating stars="3" />
-              </li>
-              <li>
-                <span>Mongo</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>Linux</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>Rest API</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>Scrum</span> <Rating stars="3" />
-              </li>
-              <li>
-                <span>Git</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>Jira</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>Bootstrap</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>Tailwind</span> <Rating stars="4" />
-              </li>
-              <li>
-                <span>MUI</span> <Rating stars="5" />
-              </li>
-              <li>
-                <span>jQuery</span> <Rating stars="3" />
-              </li>
-              <li>
-                <span>VueJS</span> <Rating stars="3" />
-              </li>
+            <ul>
+              {skills.map((skill, index) => (
+                <li key={index} className="flex mb-[2px]">
+                  <span className="mr-auto">{skill.technology}</span>{' '}
+                  <Rating stars={skill.stars.toString()} />
+                </li>
+              ))}
             </ul>
           </section>
 
           <section className="languages">
-            <h5 className="about-subtitles">
-              <span className="about-icons">
-                <FaFlag />
+            <h5 className="flex mt-10 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
+              <span className="flex items-center p-[0.6rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
+                <Icons.flag className="text-secondary mt-[-2px] mr-[-2px]" />
               </span>
-              {about.languages.title}
+              {t('languages.title')}
             </h5>
 
             <ul className="rating-list">
-              <li>
-                <span>{about.languages.en}</span> <Rating stars="4" />
+              <li className="flex mb-[2px]">
+                <span className="mr-auto">{t('languages.en')}</span>{' '}
+                <Rating stars="4" />
               </li>
-              <li>
-                <span>{about.languages.bg}</span> <Rating stars="5" />
+              <li className="flex">
+                <span className="mr-auto">{t('languages.bg')}</span>{' '}
+                <Rating stars="5" />
               </li>
             </ul>
           </section>
-
         </div>
-
-        <div className="right-col">
+        {/* Right column */}
+        <div className="col-span-12 md:col-span-8 lg:col-span-9 md:pl-2 lg:pl-8">
           <section className="work-history">
-            <h5 className="about-subtitles">
-              <span className="about-icons">
-                <FaBriefcase />
+          <h5 className="flex border-b items-center uppercase font-semibold tracking-[3px]">
+              <span className="flex items-center p-[0.5rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
+                <Icons.work className="text-secondary mt-[-2px]" />
               </span>
-              {about.workHistory.title}
+              {t('workHistory.title')}
             </h5>
 
-            <ul>
-              <li style={{ textAlign: 'left' }}>
-                {about.workHistory.jobs.childish.title}
+            <ul className='mt-5'>
+              <li className='uppercase font-bold tracking-[1px] mb-1'>
+                {t('workHistory.jobs.childish.title')}
               </li>
-              <li>
-                <span>{about.workHistory.jobs.childish.period}</span>{' '}
+              <li className='flex mb-5'>
+                <span className='mr-auto'>{t('workHistory.jobs.childish.period')}</span>{' '}
                 <a
                   type="button"
-                  href={about.workHistory.jobs.childish.link}
+                  href={t('workHistory.jobs.childish.link')}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {about.workHistory.jobs.childish.employer}
+                  {t('workHistory.jobs.childish.employer')}
                 </a>
               </li>
-              {about.workHistory.jobs.childish.description.map((p, i) => (
+              {childish.map((p, i) => (
                 <li className="left" key={i}>
                   {p}
                 </li>
               ))}
             </ul>
 
-            <ul>
-              <li>{about.workHistory.jobs.atos.title}</li>
-              <li>
-                <span>{about.workHistory.jobs.atos.period}</span>{' '}
+            <ul className='mt-10'>
+              <li className='uppercase font-bold tracking-[1px] mb-1'>
+                {t('workHistory.jobs.atos.title')}
+              </li>
+              <li className='flex mb-5'>
+                <span className='mr-auto'>{t('workHistory.jobs.atos.period')}</span>{' '}
                 <a
                   type="button"
-                  href={about.workHistory.jobs.atos.link}
+                  href={t('workHistory.jobs.atos.link')}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {about.workHistory.jobs.atos.employer}
+                  {t('workHistory.jobs.atos.employer')}
                 </a>
               </li>
-              {about.workHistory.jobs.atos.description.map((p, i) => (
+              {atos.map((p, i) => (
                 <li className="left" key={i}>
                   {p}
                 </li>
               ))}
             </ul>
 
-            <ul>
-              <li>{about.workHistory.jobs.neterra.title}</li>
-              <li>
-                <span>{about.workHistory.jobs.neterra.period}</span>{' '}
+            <ul className='mt-10'>
+              <li className='uppercase font-bold tracking-[1px] mb-1'>
+                {t('workHistory.jobs.neterra.title')}
+              </li>
+              <li className='flex mb-5'>
+                <span className='mr-auto'>{t('workHistory.jobs.neterra.period')}</span>{' '}
                 <a
                   type="button"
-                  href={about.workHistory.jobs.neterra.link}
+                  href={t('workHistory.jobs.neterra.link')}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {about.workHistory.jobs.neterra.employer}
+                  {t('workHistory.jobs.neterra.employer')}
                 </a>
               </li>
-              {about.workHistory.jobs.neterra.description.map((p, i) => (
+              {neterra.map((p, i) => (
                 <li className="left" key={i}>
                   {p}
                 </li>
               ))}
             </ul>
 
-            <ul>
-              <li className="left">{about.workHistory.jobs.walltopia.title}</li>
-              <li>
-                <span>{about.workHistory.jobs.walltopia.period}</span>{' '}
+            <ul className='mt-10'>
+              <li className='uppercase font-bold tracking-[1px] mb-1'>
+                {t('workHistory.jobs.walltopia.title')}
+              </li>
+              <li className='flex mb-5'>
+                <span className='mr-auto'>{t('workHistory.jobs.walltopia.period')}</span>{' '}
                 <a
                   type="button"
-                  href={about.workHistory.jobs.walltopia.link}
+                  href={t('workHistory.jobs.walltopia.link')}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {about.workHistory.jobs.walltopia.employer}
+                  {t('workHistory.jobs.walltopia.employer')}
                 </a>
               </li>
 
-              <li className="position">
-                <span>{about.workHistory.jobs.walltopia.pm.time}</span>{' '}
-                <span>{about.workHistory.jobs.walltopia.pm.title}</span>
+              <li className="flex font-semibold mt-5 mb-2">
+                <span className='mr-auto'>{t('workHistory.jobs.walltopia.pm.time')}</span>{' '}
+                <span>{t('workHistory.jobs.walltopia.pm.title')}</span>
               </li>
-              {about.workHistory.jobs.walltopia.pm.description.map((p, i) => (
+              {walltopiaPM.map((p, i) => (
                 <li className="left" key={i}>
                   {p}
                 </li>
               ))}
 
-              <li className="position">
-                <span>{about.workHistory.jobs.walltopia.teamLead.time}</span>{' '}
-                <span>{about.workHistory.jobs.walltopia.teamLead.title}</span>
+              <li className="flex font-semibold mt-5 mb-2">
+                <span className='mr-auto'>{t('workHistory.jobs.walltopia.teamLead.time')}</span>{' '}
+                <span>{t('workHistory.jobs.walltopia.teamLead.title')}</span>
               </li>
-              {about.workHistory.jobs.walltopia.teamLead.description.map(
+              {walltopiaLead.map(
                 (p, i) => (
                   <li className="left" key={i}>
                     {p}
@@ -257,11 +249,11 @@ const AboutPage = async ({ params }: Props) => {
                 )
               )}
 
-              <li className="position">
-                <span>{about.workHistory.jobs.walltopia.drafter.time}</span>{' '}
-                <span>{about.workHistory.jobs.walltopia.drafter.title}</span>
+              <li className="flex font-semibold mt-5 mb-2">
+                <span className='mr-auto'>{t('workHistory.jobs.walltopia.drafter.time')}</span>{' '}
+                <span>{t('workHistory.jobs.walltopia.drafter.title')}</span>
               </li>
-              {about.workHistory.jobs.walltopia.drafter.description.map(
+              {walltopiaDrafter.map(
                 (p, i) => (
                   <li className="left" key={i}>
                     {p}
@@ -272,37 +264,37 @@ const AboutPage = async ({ params }: Props) => {
           </section>
 
           <section className="education">
-            <h5 className="about-subtitles">
-              <span className="about-icons">
-                <FaGraduationCap />
+            <h5 className="flex mt-10 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
+              <span className="flex items-center p-[0.45rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
+                <Icons.education className="text-secondary mt-[-2px] mr-[-2px]" />
               </span>
-              {about.education.title}
+              {t('education.title')}
             </h5>
 
-            <ul>
-              <li className="left">{about.education.softUni.specialty}</li>
-              <li>
-                <span className="left period">
-                  {about.education.softUni.period}
+            <ul className='mb-7'>
+              <li className="uppercase font-bold tracking-[1px]">{t('education.softUni.specialty')}</li>
+              <li className='flex'>
+                <span className="mr-auto">
+                  {t('education.softUni.period')}
                 </span>{' '}
-                <span>{about.education.softUni.university}</span>
+                <span>{t('education.softUni.university')}</span>
               </li>
             </ul>
 
-            <ul>
-              <li className="left">{about.education.forestry.specialty}</li>
-              <li>
-                <span className="left period">
-                  {about.education.forestry.period}
+            <ul className='mb-7'>
+              <li className="uppercase font-bold tracking-[1px]">{t('education.forestry.specialty')}</li>
+              <li className='flex'>
+                <span className="mr-auto">
+                  {t('education.forestry.period')}
                 </span>{' '}
                 <span className="right">
-                  {about.education.forestry.university}
+                  {t('education.forestry.university')}
                 </span>
               </li>
             </ul>
           </section>
         </div>
-      </section> */}
+      </section>
     </div>
   )
 }

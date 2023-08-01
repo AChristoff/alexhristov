@@ -1,6 +1,11 @@
 import { useTranslation } from '@/app/i18n'
 import FlipCard from '@/components/flip-card'
 import { PortfolioCard } from '@/types'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Portfolio',
+}
 
 type Props = {
   params: {

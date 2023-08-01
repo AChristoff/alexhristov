@@ -1,12 +1,12 @@
-"use client"
+'use client'
 
-import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { Lang } from '@/types'
 
-import { NavItem } from "@/types/nav"
-import { Icons } from "@/config/icons"
-import { cn } from "@/lib/utils"
-import { Lang } from "@/types"
+import { NavItem } from '@/types/nav'
+import { Icons } from '@/config/icons'
+import { cn } from '@/lib/utils'
 
 interface MainNavProps {
   items?: NavItem[]
@@ -14,11 +14,10 @@ interface MainNavProps {
 }
 
 export function MainNav({ items, lng }: MainNavProps) {
-
-  const [activeLand, setActiveLand] = useState("")
+  const [activeLand, setActiveLand] = useState('')
 
   useEffect(() => {
-    const lang = window.location.pathname.split("/")[1]
+    const lang = window.location.pathname.split('/')[1]
     setActiveLand(lang)
   }, [])
 
@@ -36,8 +35,8 @@ export function MainNav({ items, lng }: MainNavProps) {
                   key={index}
                   href={`/${activeLand}${item.href}`}
                   className={cn(
-                    "uppercase flex items-center text-sm font-medium text-muted-foreground hover:text-primary",
-                    item.disabled && "cursor-not-allowed opacity-80"
+                    'uppercase flex items-center text-sm font-medium text-muted-foreground hover:text-primary',
+                    item.disabled && 'cursor-not-allowed opacity-80'
                   )}
                 >
                   {item.title[lng]}
