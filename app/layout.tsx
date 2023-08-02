@@ -44,7 +44,7 @@ export default function RootLayout({
             fontSans.variable
           )}
         >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <div className="relative flex min-h-screen flex-col">
               <Header lng={'en'} />
               <main className="md:container md:mx-auto flex-1 px-2">{children}</main>
