@@ -4,6 +4,17 @@ import cover from '@/public/assets/home-cover.png'
 
 import { useTranslation } from '@/i18n'
 
+import { GetStaticProps } from 'next';
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    redirect: {
+      destination: 'https://alekshristov.com/en/',
+      permanent: false,
+    },
+  };
+};
+
 type Props = {
   params: {
     lng: string
