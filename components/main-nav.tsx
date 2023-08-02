@@ -31,11 +31,11 @@ export function MainNav({ items, lng }: MainNavProps) {
 
   return (
     <div className="mr-2 flex flex-1 justify-between">
-      <Link href={`/${activeLang}`} className="flex items-center space-x-2">
+      <Link href={`/${activeLang}`} className="flex items-center space-x-2 ml-4 md:ml-0">
         <Icons.logo className="h-9" />
       </Link>
       <Button
-        className="px-3 md:hidden"
+        className="px-3 md:hidden mr-4 md:mr-0"
         onClick={() => setMobileNavOpen((state) => !state)}
       >
         {mobileNavOpen ? <X className="h-7" /> : <Menu className="h-7" />}
@@ -82,8 +82,8 @@ export function MainNav({ items, lng }: MainNavProps) {
           <section className="flex flex-col py-2">
             <span className="border-t w-20 my-2" />
             <span>
-              <ThemeToggle />
-              <LanguageSwitcher />
+              <ThemeToggle extraAction={() => setMobileNavOpen(false)}/>
+              <LanguageSwitcher extraAction={() => setMobileNavOpen(false)} />
             </span>
           </section>
         </section>

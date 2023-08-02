@@ -12,7 +12,7 @@ import {
 
 import { Button } from './ui/button'
 
-const LanguageSwitcher = () => {
+const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
   const router = useRouter()
 
   return (
@@ -25,13 +25,19 @@ const LanguageSwitcher = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuItem
-            onClick={() => router.push('/en')}
+            onClick={() => {
+              extraAction && extraAction()
+              router.push('/en')
+            }}
             className="flex items-center space-x-2"
           >
             <span>{'English'}</span>
           </DropdownMenuItem>
           <DropdownMenuItem
-            onClick={() => router.push('/bg')}
+             onClick={() => {
+              extraAction && extraAction()
+              router.push('/bg')
+            }}
             className="flex items-center space-x-2"
           >
             <span>{'Български'}</span>
