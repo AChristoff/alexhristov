@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 import { Header } from "@/components/header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import { languages } from '../i18n/settings'
+import { languages } from '../../i18n/settings'
 import { Lang } from "@/types"
 import Footer from "@/components/footer"
 

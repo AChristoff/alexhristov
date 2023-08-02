@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import cover from '@/public/assets/home-cover.png'
 
-import { useTranslation } from '@/app/i18n'
+import { useTranslation } from '@/i18n'
 
 type Props = {
   params: {

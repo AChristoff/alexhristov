@@ -4,7 +4,7 @@ import cover from '@/public/assets/about-cover.png'
 
 import { Icons } from '@/config/icons'
 import Rating from '@/components/rating'
-import { useTranslation } from '@/app/i18n'
+import { useTranslation } from '@/i18n'
 
 const skills = [
   { technology: 'JavaScript', stars: 5 },
