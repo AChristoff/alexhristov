@@ -73,9 +73,9 @@ const AboutPage = async ({ params }: Props) => {
         {t('generalInfo')}
       </section>
       {/* CV */}
-      <section className="grid grid-cols-12 gap-10">
+      <section className="flex flex-wrap flex-row gap-10">
         {/* Left column */}
-        <div className="col-span-12 md:col-span-4 lg:col-span-3">
+        <div className="w-full md:w-[31%] lg:w-[22%] xl:w-[20%]">
           <section className="contacts">
             <h5 className="flex mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
               <span className="flex items-center p-[0.6rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
@@ -136,7 +136,7 @@ const AboutPage = async ({ params }: Props) => {
           </section>
         </div>
         {/* Right column */}
-        <div className="col-span-12 md:col-span-8 lg:col-span-9 md:pl-2 lg:pl-8">
+        <div className="flex-1">
           <section className="work-history">
           <h5 className="flex border-b items-center uppercase font-semibold tracking-[3px]">
               <span className="flex items-center p-[0.5rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
