@@ -19,12 +19,13 @@ interface MainNavProps {
 }
 
 export function MainNav({ items, lng }: MainNavProps) {
-  const [activeLang, setActiveLang] = useState('')
+  const [activeLang, setActiveLang] = useState(lng)
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
   useEffect(() => {
     const lang = window.location.pathname.split('/')[1]
-    setActiveLang(lang)
+    if(!lang) return
+    setActiveLang(lang as Lang)
   }, [])
 
   return (
