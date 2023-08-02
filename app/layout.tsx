@@ -8,8 +8,7 @@ import { cn } from "@/lib/utils"
 import { Header } from "@/components/header"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
-import { languages } from '@/i18n/settings'
-import { Lang } from "@/types"
+
 import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
@@ -28,24 +27,16 @@ export const metadata: Metadata = {
   },
 }
 
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }))
-}
-
 interface RootLayoutProps {
   children: React.ReactNode
-  params: {
-    lng: Lang
-  }
 }
 
 export default function RootLayout({
   children,
-  params: { lng },
 }: RootLayoutProps) {
   return (
     <>
-      <html lang={lng || 'en'} dir={dir(lng)} suppressHydrationWarning>
+      <html lang={'en'} dir={dir('en')} suppressHydrationWarning>
         <head />
         <body
           className={cn(
@@ -55,7 +46,7 @@ export default function RootLayout({
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
-              <Header lng={lng} />
+              <Header lng={'en'} />
               <main className="md:container md:mx-auto flex-1 px-2">{children}</main>
               <Footer />
             </div>
