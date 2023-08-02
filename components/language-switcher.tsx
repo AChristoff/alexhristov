@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { Globe } from 'lucide-react'
 
 import {
@@ -14,6 +14,7 @@ import { Button } from './ui/button'
 
 const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
   const router = useRouter()
+  const pathname = usePathname()
 
   return (
     <>
@@ -27,7 +28,11 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
           <DropdownMenuItem
             onClick={() => {
               extraAction && extraAction()
-              router.push('/en')
+              let newPathname = '/en'
+              if(pathname.includes('/bg')) {
+                newPathname =  pathname.replace('/bg', '/en')
+              }
+              router.push(newPathname)
             }}
             className="flex items-center space-x-2"
           >
@@ -36,7 +41,11 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
           <DropdownMenuItem
              onClick={() => {
               extraAction && extraAction()
-              router.push('/bg')
+              let newPathname = '/bg'
+              if(pathname.includes('/en')) {
+                newPathname = pathname.replace('/en', '/bg')
+              }
+              router.push(newPathname)
             }}
             className="flex items-center space-x-2"
           >
