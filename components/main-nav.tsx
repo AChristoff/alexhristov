@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Lang } from '@/types'
-import { MenuIcon, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 import { NavItem } from '@/types/nav'
 import { Icons } from '@/config/icons'
@@ -36,7 +36,7 @@ export function MainNav({ items, lng }: MainNavProps) {
         className="px-3 md:hidden"
         onClick={() => setMobileNavOpen((state) => !state)}
       >
-        {mobileNavOpen ? <X className="h-7" /> : <MenuIcon className="h-7" />}
+        {mobileNavOpen ? <X className="h-7" /> : <Menu className="h-7" />}
       </Button>
       {items?.length ? (
         <nav className="hidden md:flex gap-6 w-auto">
