@@ -3,5 +3,7 @@
   "name": "Aleksandar Hristov",
   "jobTitle": "Front-end Developer / MERN stack",
   "more": "View more about me",
-  "link": "here"
+  "link": "here",
+  "goHome": "Go to home",
+  "notFound": "Page not found"
 }
