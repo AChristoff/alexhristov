@@ -45,7 +45,7 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <>
-      <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
+      <html lang={lng || 'en'} dir={dir(lng)} suppressHydrationWarning>
         <head />
         <body
           className={cn(

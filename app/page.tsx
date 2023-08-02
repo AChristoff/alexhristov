@@ -11,7 +11,7 @@ type Props = {
 }
 
 const HomePage = async ({ params }: Props) => {
-  const { t } = await useTranslation(params?.lng, 'home')
+  const { t } = await useTranslation(params?.lng || 'en', 'home')
 
   return (
     <section className="grid items-center gap-6 pb-8 pt-6 md:py-10">
@@ -36,7 +36,7 @@ const HomePage = async ({ params }: Props) => {
         />
         <h6 className="flex flex-wrap items-center justify-center uppercase tracking-[3px] font-semibold text-[0.8rem] md:text-[0.9rem]">
           <span className="text-muted-foreground">{t('more')}</span>
-          <Link className="ml-2" href={'/about'}>
+          <Link className="ml-2" href={`/${params?.lng || 'en'}/about'`}>
             {t('link')}
           </Link>
         </h6>
