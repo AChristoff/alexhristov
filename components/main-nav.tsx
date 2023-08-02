@@ -58,7 +58,7 @@ export function MainNav({ items, lng }: MainNavProps) {
         </nav>
       ) : null}
       {mobileNavOpen && (
-        <section className="md:hidden absolute bg-background w-full pt-5 px-3 mt-12 drop-shadow-lg border-t">
+        <section className="md:hidden absolute bg-background w-full pt-5 px-3 mt-12 drop-shadow-xl border-y">
           <nav className="flex flex-col gap-6 w-auto">
             {items?.map(
               (item, index) =>
