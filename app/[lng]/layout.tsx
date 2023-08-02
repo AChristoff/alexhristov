@@ -56,7 +56,7 @@ export default function RootLayout({
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
               <Header lng={lng} />
-              <main className="md:container md:mx-auto flex-1 px-2">{children}</main>
+              <main className="md:container md:mx-auto flex-1 px-8 md:px-2">{children}</main>
               <Footer />
             </div>
             <TailwindIndicator />
