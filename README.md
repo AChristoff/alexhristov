@@ -1,20 +1,22 @@
-### My personal page | Next.js
+<img src="/public/aleksov-logo.svg" width="200" height="70">
 
-&#128640; https://alekshristov.com/
+https://alekshristov.com/ 
 
 ---
 
 
 
-## Tech-stack
+## Technologies
 
-- [Next.js 13](https://nextjs.org/docs)
-- [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
-- [Tailwind CSS](https://tailwindcss.com/docs/installation)
-- [Shadcn UI](https://ui.shadcn.com/docs/components/accordion)
-- [Lucide Icons](https://lucide.dev)
-- [Internationalization](https://www.i18next.com/)
+* Framework - [Next.js 13](https://nextjs.org/docs)
+* Language - [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+* Styles: 
+  - [Tailwind CSS](https://tailwindcss.com/docs/installation)
+  - [Shadcn UI](https://ui.shadcn.com/docs/components/accordion)
+  - [Lucide Icons](https://lucide.dev)
+- Internationalization - [i18next](https://www.i18next.com/)
+- Platform - [Vercel](https://vercel.com/)
 
 ## License
 
-Licensed under the [GNU license](https://github.com/AChristoff/alexhristov/blob/main/LICENSE).
+Licensed under the [GNU license](https://github.com/AChristoff/alexhristov/blob/main/LICENSE)
