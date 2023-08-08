@@ -1,8 +1,8 @@
 import { Lang } from '@/types'
 
-import { siteConfig } from '@/config/site'
-import { MainNav } from '@/components/main-nav'
-import { ThemeToggle } from '@/components/theme-toggle'
+import { siteConfig } from '@/assets/site'
+import { MainNav } from '@/components/layout/main-nav'
+import { ThemeToggle } from '@/components/layout/theme-toggle'
 
 import LanguageSwitcher from './language-switcher'
 

@@ -2,15 +2,17 @@ import "@/styles/globals.css"
 import { Metadata } from "next"
 import { dir } from "i18next"
 
-import { siteConfig } from "@/config/site"
-import { fontSans } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
-import { Header } from "@/components/header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeProvider } from "@/components/theme-provider"
+import { siteConfig } from "@/assets/site"
+import { fontSans } from "@/assets/fonts"
+import { cn } from "@/assets/utils"
 import { languages } from '@/i18n/settings'
+
+import { TailwindIndicator } from "@/components/layout/tailwind-indicator"
+import { ThemeProvider } from "@/components/layout/theme-provider"
+import { Header } from "@/components/layout/header"
+import Footer from "@/components/layout/footer"
+
 import { Lang } from "@/types"
-import Footer from "@/components/footer"
 
 export const metadata: Metadata = {
   title: {

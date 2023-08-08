@@ -1,6 +1,6 @@
 import { FC } from 'react'
 
-import { Icons } from '@/config/icons'
+import { Icons } from '@/assets/icons'
 
 type Props = {
   points?: number

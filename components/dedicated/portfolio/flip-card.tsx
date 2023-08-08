@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { PortfolioCard } from '@/types'
 
-import { Button } from './ui/button'
+import { Button } from '../../ui/button'
 
 export default function FlipCard({
   img,

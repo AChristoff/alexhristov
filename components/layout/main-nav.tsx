@@ -6,12 +6,12 @@ import { Lang } from '@/types'
 import { Menu, X } from 'lucide-react'
 
 import { NavItem } from '@/types/nav'
-import { Icons } from '@/config/icons'
-import { cn } from '@/lib/utils'
+import { Icons } from '@/assets/icons'
+import { cn } from '@/assets/utils'
 
 import LanguageSwitcher from './language-switcher'
 import { ThemeToggle } from './theme-toggle'
-import { Button } from './ui/button'
+import { Button } from '@/components/ui/button'
 
 interface MainNavProps {
   items?: NavItem[]
