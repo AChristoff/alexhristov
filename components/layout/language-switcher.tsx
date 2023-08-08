@@ -19,7 +19,7 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
   return (
     <>
       <DropdownMenu>
-        <DropdownMenuTrigger>
+        <DropdownMenuTrigger asChild>
           <Button variant="ghost" size="icon" id="lang">
             <Globe />
           </Button>

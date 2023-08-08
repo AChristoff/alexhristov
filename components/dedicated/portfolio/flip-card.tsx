@@ -10,7 +10,7 @@ export default function FlipCard({
   buttons,
 }: Omit<PortfolioCard, 'id'> ) {
 
-  const cardCover = require(`@/public/assets/cards/${img}`)
+  const cardCover = require(`@/public/assets/cards/${img}`).default;
 
   return (
     <div className="rounded-lg border overflow-hidden">
