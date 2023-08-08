@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Lang } from '@/types'
 import { Menu, X } from 'lucide-react'
 
-import { NavItem } from '@/types/nav'
+import { NavItem } from '@/types'
 import { Icons } from '@/assets/icons'
 import { cn } from '@/assets/utils'
 

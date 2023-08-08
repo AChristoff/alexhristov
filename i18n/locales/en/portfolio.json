@@ -3,6 +3,7 @@
   "technologies": "Technologies",
   "cards": [
     {
+      "id": 1,
       "img": "childish-ai.png",
       "title": "Childish.ai",
       "description": "Next.js / Typescript / MUI / Redux - Toolkit",
@@ -14,6 +15,7 @@
       ]
     },
     {
+      "id": 2,
       "img": "fabrico.png",
       "title": "Fabrico",
       "description": "React / Typescript / MUI / Redux - Toolkit",
@@ -25,6 +27,7 @@
       ]
     },
     {
+      "id": 3,
       "img": "atos-mep.png",
       "title": "Atos MEP",
       "description": "React / Typescript / Redux / Sass / Jest",
@@ -36,6 +39,7 @@
       ]
     },
     {
+      "id": 4,
       "img": "cola.png",
       "title": "Image Recognition Tool",
       "description": "React / Redux / MUI",
@@ -47,6 +51,7 @@
       ]
     },
     {
+      "id": 5,
       "img": "campic-bg.png",
       "title": "Campic-bg",
       "description": "MERN & Redux",
@@ -58,6 +63,7 @@
       ]
     },
     {
+      "id": 6,
       "img": "casita-logo.png",
       "title": "Business Website",
       "description": "Vue.js & Sass",
@@ -69,6 +75,7 @@
       ]
     },
     {
+      "id": 7,
       "img": "nete-logo.png",
       "title": "NETERRA Landing page",
       "description": "JavaScript, HTML, CSS",
@@ -80,6 +87,7 @@
       ]
     },
     {
+      "id": 8,
       "img": "gift-card.png",
       "title": "Gift Card story",
       "description": "Vue.js & Sass",
@@ -91,6 +99,7 @@
       ]
     },
     {
+      "id": 9,
       "img": "ecta-logo.png",
       "title": "ECTA 2020 landing page",
       "description": "JavaScript, HTML, CSS",

@@ -8,17 +8,19 @@ export default function FlipCard({
   title,
   description,
   buttons,
-}: PortfolioCard) {
+}: Omit<PortfolioCard, 'id'> ) {
+
+  const cardCover = require(`@/public/assets/cards/${img}`)
+
   return (
     <div className="rounded-lg border overflow-hidden">
       <div className="overflow-hidden sm:h-[13rem] md:h-[14rem] border-b">
         <Image
-          src={require(`@/public/assets/cards/${img}`)}
-          alt={img}
+          src={cardCover}
+          alt={title}
           width={0}
           height={0}
           sizes="40vw"
-          placeholder="empty"
           className="mx-auto"
         />
       </div>

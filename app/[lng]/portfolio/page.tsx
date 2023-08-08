@@ -24,9 +24,9 @@ const PortfolioPage = async ({ params }: Props) => {
         {t('title')}
       </h1>
       <section className="my-10 gap-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <FlipCard
-            key={index}
+            key={card.id}
             img={card.img}
             title={t('technologies')}
             description={card.description}
