@@ -122,14 +122,19 @@
   "education": {
     "title": "Образование",
     "softUni": {
+      "link": "https://about.softuni.bg/",
       "specialty": "'JavaScript' - уеб програмист",
       "period": "2018 - 2020",
       "university": "СофтУни"
     },
     "forestry": {
+      "link": "https://ltu.bg/bg/",
       "specialty": "'Инженерен Дизайн' - Интериор и дизайн на мебели",
       "period": "2006 - 2010",
       "university": "Лесотехнически Университет"
     }
+  },
+  "certification": {
+    "title": "Сертификати"
   }
 }

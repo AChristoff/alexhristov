@@ -122,14 +122,19 @@
   "education": {
     "title": "Education",
     "softUni": {
+      "link": "https://about.softuni.bg/",
       "specialty": "JavaScript Web Developer",
       "period": "2018 - 2020",
       "university": "SoftUni"
     },
     "forestry": {
+      "link": "https://ltu.bg/en/",
       "specialty": "Furniture Design & Engineering",
       "period": "2006 - 2010",
       "university": "University of Forestry"
     }
+  },
+  "certification": {
+    "title": "Certification"
   }
 }

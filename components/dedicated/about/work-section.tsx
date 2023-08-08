@@ -37,6 +37,7 @@ const WorkSection = ({ t }: Props) => {
             href={t('workHistory.jobs.childish.link')}
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
           >
             {t('workHistory.jobs.childish.employer')}
           </a>
@@ -59,6 +60,7 @@ const WorkSection = ({ t }: Props) => {
             href={t('workHistory.jobs.atos.link')}
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
           >
             {t('workHistory.jobs.atos.employer')}
           </a>
@@ -83,6 +85,7 @@ const WorkSection = ({ t }: Props) => {
             href={t('workHistory.jobs.neterra.link')}
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
           >
             {t('workHistory.jobs.neterra.employer')}
           </a>
@@ -107,6 +110,7 @@ const WorkSection = ({ t }: Props) => {
             href={t('workHistory.jobs.walltopia.link')}
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
           >
             {t('workHistory.jobs.walltopia.employer')}
           </a>

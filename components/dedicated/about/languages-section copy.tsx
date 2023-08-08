@@ -22,7 +22,15 @@ const EducationSection = ({ t }: Props) => {
         </li>
         <li className="flex">
           <span className="mr-auto">{t('education.softUni.period')}</span>{' '}
-          <span>{t('education.softUni.university')}</span>
+          <a
+            type="button"
+            href={t('education.softUni.link')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="right hover:underline hover:text-primary"
+          >
+            {t('education.softUni.university')}
+          </a>
         </li>
       </ul>
 
@@ -32,7 +40,15 @@ const EducationSection = ({ t }: Props) => {
         </li>
         <li className="flex">
           <span className="mr-auto">{t('education.forestry.period')}</span>{' '}
-          <span className="right">{t('education.forestry.university')}</span>
+          <a
+            type="button"
+            href={t('education.forestry.link')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="right hover:underline hover:text-primary"
+          >
+            {t('education.forestry.university')}
+          </a>
         </li>
       </ul>
     </section>

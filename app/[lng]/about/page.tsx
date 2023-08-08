@@ -8,7 +8,8 @@ import Contacts from '@/components/dedicated/about/contacts-section'
 import Skills from '@/components/dedicated/about/skills-section'
 import Languages from '@/components/dedicated/about/languages-section'
 import WorkHistory from '@/components/dedicated/about/work-section'
-import EducationSection from '@/components/dedicated/about/languages-section copy'
+import Education from '@/components/dedicated/about/languages-section copy'
+import Certifications from '@/components/dedicated/about/certification-section'
 
 export const metadata: Metadata = {
   title: 'About',
@@ -59,7 +60,9 @@ const AboutPage = async ({ params }: Props) => {
         <div className="flex-1">
           <WorkHistory t={t} />
 
-          <EducationSection t={t} />
+          <Education t={t} />
+          
+          <Certifications t={t} lang={params?.lng} />
         </div>
       </section>
     </div>
