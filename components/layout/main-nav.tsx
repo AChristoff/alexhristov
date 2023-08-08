@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { useSelectedLayoutSegment } from 'next/navigation'
 import { Lang } from '@/types'
 import { Menu, X } from 'lucide-react'
 
@@ -21,6 +22,8 @@ interface MainNavProps {
 export function MainNav({ items, lng }: MainNavProps) {
   const [activeLang, setActiveLang] = useState('en')
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
+
+  const activeSegment = useSelectedLayoutSegment()
 
   useEffect(() => {
     const lang = window.location.pathname.split('/')[1]
@@ -50,6 +53,7 @@ export function MainNav({ items, lng }: MainNavProps) {
                   href={`/${activeLang}${item.href}`}
                   className={cn(
                     'uppercase flex items-center text-sm font-medium text-muted-foreground hover:text-primary',
+                    activeSegment === item.activeSegment && 'text-primary font-semibold',
                     item.disabled && 'cursor-not-allowed opacity-80'
                   )}
                 >

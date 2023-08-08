@@ -18,6 +18,7 @@ export type NavItem = {
     bg: string
   }
   href?: string
+  activeSegment?: string
   disabled?: boolean
   external?: boolean
 }
