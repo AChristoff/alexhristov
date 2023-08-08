@@ -8,7 +8,7 @@ type Props = {
 const EducationSection = ({ t }: Props) => {
   return (
     <section className="education">
-      <h5 className="flex mt-10 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
+      <h5 className="flex mt-12 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
         <span className="flex items-center p-[0.45rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
           <Icons.education className="text-secondary mt-[-2px] mr-[-2px]" />
         </span>

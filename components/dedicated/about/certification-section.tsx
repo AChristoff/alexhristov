@@ -81,7 +81,7 @@ const CertificationSection = ({ t, lang }: Props) => {
 
   return (
     <section className="skills">
-      <h5 className="flex mt-10 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
+      <h5 className="flex mt-12 mb-5 border-b items-center uppercase font-semibold tracking-[3px]">
         <span className="flex items-center p-[0.45rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
           <Icons.medal className="text-secondary mt-[-2px] w-[2rem] h-[2rem]" />
         </span>
@@ -97,7 +97,7 @@ const CertificationSection = ({ t, lang }: Props) => {
               rel="noopener noreferrer"
               className="mb-[2px] hover:underline hover:text-primary flex-col sm:flex-row flex"
             >
-              <span className="mr-auto block font-semibold">{skill.certification}</span>{' '}
+              <span className="mr-auto block font-semibold sm:font-normal">{skill.certification}</span>{' '}
               <span className="sm:ml-auto block mb-2 sm:mb-1">{formatDate(skill.year, lang)}</span>
             </a>
           </li>

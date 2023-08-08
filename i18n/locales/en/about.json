@@ -18,6 +18,10 @@
     "en": "English",
     "bg": "Bulgarian"
   },
+  "v-card": {
+    "title": "vCard",
+    "scan-me": "Scan me!"
+  },
   "cv": {
     "title": "Download CV"
   },
