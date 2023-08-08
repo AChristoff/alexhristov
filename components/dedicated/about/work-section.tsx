@@ -1,9 +1,8 @@
-import { TFunction } from 'i18next'
-
+import { TFunction } from '@/types'
 import { Icons } from '@/assets/icons'
 
 type Props = {
-  t: TFunction<any, string>
+  t: TFunction
 }
 
 const WorkSection = ({ t }: Props) => {

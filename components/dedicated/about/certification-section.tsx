@@ -1,5 +1,4 @@
-import { TFunction } from 'i18next'
-
+import { TFunction } from '@/types'
 import { Icons } from '@/assets/icons'
 import { formatDate } from '@/assets/utils'
 
@@ -73,7 +72,7 @@ const skills = [
 ]
 
 type Props = {
-  t: TFunction<any, string>
+  t: TFunction
   lang: string
 }
 

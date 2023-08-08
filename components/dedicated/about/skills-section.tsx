@@ -1,7 +1,5 @@
-import { TFunction } from 'i18next'
-
+import { TFunction } from '@/types'
 import { Icons } from '@/assets/icons'
-
 import Rating from './rating'
 
 const skills = [
@@ -30,7 +28,7 @@ const skills = [
 ]
 
 type Props = {
-  t: TFunction<any, string>
+  t: TFunction
 }
 
 const SkillsSection = ({ t }: Props) => {

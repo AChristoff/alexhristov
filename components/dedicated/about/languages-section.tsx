@@ -1,10 +1,9 @@
-import { TFunction } from 'i18next'
-
+import { TFunction } from '@/types'
 import { Icons } from '@/assets/icons'
 import Rating from './rating'
 
 type Props = {
-  t: TFunction<any, string>
+  t: TFunction
 }
 
 const LanguagesSection = ({ t }: Props) => {

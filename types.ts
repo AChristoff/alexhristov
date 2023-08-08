@@ -22,3 +22,5 @@ export type NavItem = {
   external?: boolean
 }
 
+
+export type TFunction = (key: string, options?: any) => any;
