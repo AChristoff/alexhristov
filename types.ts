@@ -17,8 +17,8 @@ export type NavItem = {
     en: string
     bg: string
   }
-  href?: string
-  activeSegment?: string
+  href: string
+  activeSegment: string | null
   disabled?: boolean
   external?: boolean
 }

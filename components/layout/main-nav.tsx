@@ -15,7 +15,7 @@ import { ThemeToggle } from './theme-toggle'
 import { Button } from '@/components/ui/button'
 
 interface MainNavProps {
-  items?: NavItem[]
+  items: NavItem[]
   lng: Lang
 }
 
