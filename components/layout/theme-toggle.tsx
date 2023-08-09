@@ -18,8 +18,8 @@ export function ThemeToggle({extraAction}: {extraAction?: () => void}) {
         setTheme(theme === "light" ? "dark" : "light")}
       }
     >
-      <Moon className="h-[1.5rem] w-[1.3rem] dark:hidden" />
-      <Sun className="hidden h-5 w-5 dark:block" />
+      <Moon className="h-[1.5rem] dark:hidden" />
+      <Sun className="h-[1.5rem] hidden dark:block" />
       <span className="sr-only">Toggle theme</span>
     </Button>
   )

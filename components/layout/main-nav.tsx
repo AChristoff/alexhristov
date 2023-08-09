@@ -64,7 +64,7 @@ export function MainNav({ items, lng }: MainNavProps) {
         </nav>
       ) : null}
       {mobileNavOpen && (
-        <section className="md:hidden absolute bg-background w-full pt-5 px-3 mt-12 drop-shadow-xl border-y">
+        <section className="md:hidden absolute bg-background w-full pt-5 px-3 mt-12 drop-shadow-xl border-y border-b-primary">
           <nav className="flex flex-col gap-6 w-auto">
             {items?.map(
               (item, index) =>
@@ -74,7 +74,8 @@ export function MainNav({ items, lng }: MainNavProps) {
                     href={`/${activeLang}${item.href}`}
                     onClick={() => setMobileNavOpen(false)}
                     className={cn(
-                      'uppercase flex items-center text-sm font-medium text-muted-foreground hover:text-primary',
+                      'uppercase flex justify-center items-center text-sm font-medium text-muted-foreground hover:text-primary',
+                      activeSegment === item.activeSegment && 'text-primary font-semibold',
                       item.disabled && 'cursor-not-allowed opacity-80'
                     )}
                   >
@@ -83,10 +84,10 @@ export function MainNav({ items, lng }: MainNavProps) {
                 )
             )}
           </nav>
-          <section className="flex flex-col py-2">
-            <span className="border-t w-20 my-2" />
-            <span>
-              <ThemeToggle extraAction={() => setMobileNavOpen(false)}/>
+          <section className="flex flex-col justify-center items-center py-2 mt-4">
+            <span className="border-t my-4 w-10" />
+            <span className="flex justify-center items-center">
+              <ThemeToggle />
               <LanguageSwitcher extraAction={() => setMobileNavOpen(false)} />
             </span>
           </section>

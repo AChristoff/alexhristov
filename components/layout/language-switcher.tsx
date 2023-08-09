@@ -16,6 +16,8 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
   const router = useRouter()
   const pathname = usePathname()
 
+  const activeLang = pathname.includes('/en') ? 'en' : 'bg'
+
   return (
     <>
       <DropdownMenu>
@@ -34,7 +36,7 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
               }
               router.push(newPathname)
             }}
-            className="flex items-center space-x-2"
+            className={`flex items-center space-x-2 ${activeLang === 'en' ? 'text-primary font-semibold' : ''}`} 
           >
             <span>{'English'}</span>
           </DropdownMenuItem>
@@ -47,7 +49,7 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
               }
               router.push(newPathname)
             }}
-            className="flex items-center space-x-2"
+            className={`flex items-center space-x-2 ${activeLang === 'bg' ? 'text-primary font-semibold' : ''}`} 
           >
             <span>{'Български'}</span>
           </DropdownMenuItem>
