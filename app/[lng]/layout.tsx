@@ -16,7 +16,7 @@ import { Lang } from "@/types"
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} - Software Engineering`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: "/favicon.svg",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 

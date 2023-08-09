@@ -5,6 +5,9 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Portfolio',
+  openGraph: {
+    images: '/assets/home-cover.png',
+  },
 }
 
 type Props = {
