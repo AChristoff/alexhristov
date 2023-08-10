@@ -1,4 +1,5 @@
 import '@/styles/globals.css'
+import dynamic from 'next/dynamic'
 import { Metadata } from 'next'
 import { languages } from '@/i18n/settings'
 import { Lang } from '@/types'
@@ -11,7 +12,9 @@ import { ThemeProvider } from '@/components/layout/theme-provider'
 import { fontSans } from '@/assets/fonts'
 import { siteConfig } from '@/assets/site'
 import { cn } from '@/assets/utils'
-import Particles from '@/components/ui/particles'
+
+const LargeScreensComponent = dynamic(()=>{return import('@/components/layout/large-screens-only-view')}, {ssr: false});
+const Particles = dynamic(()=>{return import('@/components/ui/particles')}, {ssr: false});
 
 export const metadata: Metadata = {
   title: {
@@ -60,7 +63,9 @@ export default function RootLayout({
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
-              <Particles className="fixed inset-0 pointer-events-none" quantity={200}/>
+              <LargeScreensComponent>
+                <Particles className="fixed inset-0 pointer-events-none" quantity={200}/>
+              </LargeScreensComponent>
               <Header lng={lng} />
               <main className="  md:max-w-4xl md:mx-auto flex-1 px-8 md:px-2 z-10" style={{backdropFilter: 'saturate(100%) blur(3px)'}}>
                 {children}
