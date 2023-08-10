@@ -13,8 +13,8 @@ export default function FlipCard({
   const cardCover = require(`@/public/assets/cards/${img}`).default;
 
   return (
-    <div className="rounded-lg border overflow-hidden">
-      <div className="overflow-hidden sm:h-[13rem] md:h-[14rem] border-b">
+    <div className="rounded-lg border border-slate-300 dark:border-slate-700 overflow-hidden">
+      <div className="overflow-hidden sm:h-[13rem] md:h-[14rem] border-b border-slate-300 dark:border-slate-700 bg-background/50">
         <Image
           src={cardCover}
           alt={title}

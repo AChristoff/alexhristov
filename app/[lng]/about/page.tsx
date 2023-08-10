@@ -43,7 +43,7 @@ const AboutPage = async ({ params }: Props) => {
         />
       </section>
       {/* ----- Summary ----- */}
-      <section className="mt-7 mb-10 max-w-4xl mx-auto text-stale-800">
+      <section className="mt-7 mb-10 max-w-4xl mx-auto">
         {t('generalInfo')}
       </section>
       {/* ----- CV ----- */}

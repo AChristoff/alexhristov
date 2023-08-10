@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t" style={{backdropFilter: 'saturate(100%) blur(3px)'}}>
+    <footer className="border-t">
       <section className="container flex items-center justify-center py-1">
         <p className="text-sm font-medium  mr-3 text-muted-foreground">&copy;{` 2019-${currentYear}`}</p>
         <Link
