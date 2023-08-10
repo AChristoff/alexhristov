@@ -49,7 +49,7 @@ const AboutPage = async ({ params }: Props) => {
       {/* ----- CV ----- */}
       <section className="flex flex-wrap flex-row gap-10">
         {/* ----- Left Col ----- */}
-        <div className="w-full md:w-[31%] lg:w-[22%] xl:w-[20%] flex flex-col">
+        <div className="w-full md:w-[31%] lg:w-[25%] flex flex-col">
           <Contacts t={t} />
 
           <Skills t={t} />

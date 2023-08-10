@@ -1,18 +1,17 @@
-import "@/styles/globals.css"
-import { Metadata } from "next"
-import { dir } from "i18next"
-
-import { siteConfig } from "@/assets/site"
-import { fontSans } from "@/assets/fonts"
-import { cn } from "@/assets/utils"
+import '@/styles/globals.css'
+import { Metadata } from 'next'
 import { languages } from '@/i18n/settings'
+import { Lang } from '@/types'
+import { dir } from 'i18next'
 
-import { TailwindIndicator } from "@/components/layout/tailwind-indicator"
-import { ThemeProvider } from "@/components/layout/theme-provider"
-import { Header } from "@/components/layout/header"
-import Footer from "@/components/layout/footer"
-
-import { Lang } from "@/types"
+import Footer from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { TailwindIndicator } from '@/components/layout/tailwind-indicator'
+import { ThemeProvider } from '@/components/layout/theme-provider'
+import { fontSans } from '@/assets/fonts'
+import { siteConfig } from '@/assets/site'
+import { cn } from '@/assets/utils'
+import Particles from '@/components/ui/particles'
 
 export const metadata: Metadata = {
   title: {
@@ -22,11 +21,11 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
+    { media: '(prefers-color-scheme: light)', color: 'white' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   icons: {
-    icon: "/favicon.svg",
+    icon: '/favicon.svg',
   },
   robots: {
     index: true,
@@ -55,14 +54,17 @@ export default function RootLayout({
         <head />
         <body
           className={cn(
-            "min-h-screen bg-background font-sans antialiased",
+            'min-h-screen bg-background font-sans antialiased',
             fontSans.variable
           )}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
+              <Particles className="fixed inset-0 pointer-events-none" quantity={200}/>
               <Header lng={lng} />
-              <main className="md:container md:mx-auto flex-1 px-8 md:px-2">{children}</main>
+              <main className="  md:max-w-4xl md:mx-auto flex-1 px-8 md:px-2 z-10" style={{backdropFilter: 'saturate(100%) blur(3px)'}}>
+                {children}
+              </main>
               <Footer />
             </div>
             <TailwindIndicator />
