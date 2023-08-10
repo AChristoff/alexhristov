@@ -4,7 +4,7 @@ import { useState, useEffect, FC } from 'react';
 import throttle from 'lodash/throttle';
 
 interface IProps {
-  children: React.ReactNode;
+  children: React.ReactElement
 }
 
 const LargeScreensComponent: FC<IProps> = ({ children }) => {
