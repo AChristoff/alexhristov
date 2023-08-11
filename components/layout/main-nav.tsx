@@ -33,7 +33,7 @@ export function MainNav({ items, lng }: MainNavProps) {
   }, [])
 
   return (
-    <div className="mr-2 flex flex-1 justify-between">
+    <div className="mr-2 flex flex-1 justify-between h-full">
       <Link href={`/${activeLang}`} className="flex items-center space-x-2 ml-4 md:ml-0">
         <Icons.logo className="h-9" />
       </Link>

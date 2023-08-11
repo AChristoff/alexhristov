@@ -30,9 +30,9 @@
 
 
 html.dark .background-lines {
-  background-image: linear-gradient(-60deg, #1f2937 50%, #0f172a 50%);
+  background-image: linear-gradient(30deg, #323b4b 50%, #020617 50%);
 }
 
 html.light .background-lines {
-  background-image: linear-gradient(-60deg, #f8fafc 50%, #d1d5db 50%);
+  background-image: linear-gradient(30deg, #f8fafc 50%, #d1d5db 50%);
 }
