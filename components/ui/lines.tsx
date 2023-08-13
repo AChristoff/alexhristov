@@ -1,4 +1,4 @@
-import '@/styles/lines.css'
+import '@/styles/lines.scss'
 
 const Lines = () => {
   return (

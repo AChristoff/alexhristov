@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
 import { Metadata } from 'next'
 import { languages } from '@/i18n/settings'
 import { dir } from 'i18next'
