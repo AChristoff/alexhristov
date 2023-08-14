@@ -18,7 +18,7 @@ const WorkSection = ({ t }: Props) => {
     <section className="work-history">
       <h5 className="flex border-b items-center uppercase font-semibold tracking-[3px]">
         <span className="flex items-center p-[0.5rem] bg-primary rounded-full w-[2.5rem] h-[2.5rem] mr-2 mb-1">
-          <Icons.work className="text-secondary mt-[-2px]" />
+          <Icons.work className="text-secondary mt-[-2px] w-[2rem] h-[2rem]" />
         </span>
         {t('workHistory.title')}
       </h5>
