@@ -44,10 +44,17 @@ export function MainNav({ items, lng }: MainNavProps) {
         open={mobileNavOpen}
         onOpenChange={() => setMobileNavOpen((state) => !state)}
       >
-        <SheetTrigger aria-controls="sheet-toggle">
+        <SheetTrigger
+          aria-controls="sheet-toggle"
+          style={{ width: '3.5em', height: '3.3em' }}
+        >
           <Burger mobileNavOpen={mobileNavOpen} />
         </SheetTrigger>
-        <SheetContent id="sheet-toggle" side="top" className="opacity-90 pb-4 border-b border-b-slate-200">
+        <SheetContent
+          id="sheet-toggle"
+          side="top"
+          className="opacity-90 pb-4 border-b border-b-slate-200"
+        >
           <section className="w-full pt-14">
             <nav className="flex flex-col gap-6 w-auto pt-2">
               <NavItems
