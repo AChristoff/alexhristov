@@ -13,6 +13,13 @@ import VCard from '@/components/dedicated/about/v-card-section'
 
 export const metadata: Metadata = {
   title: 'About',
+  alternates: {
+    canonical: '/about',
+    languages: {
+      'en-US': '/en/about',
+      'bg-BG': '/bg/about',
+    },
+  }
 }
 
 type Props = {

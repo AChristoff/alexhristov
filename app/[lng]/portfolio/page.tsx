@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   openGraph: {
     images: '/assets/home-cover.png',
   },
+  alternates: {
+    canonical: '/portfolio',
+    languages: {
+      'en-US': '/en/portfolio',
+      'bg-BG': '/bg/portfolio',
+    },
+  }
 }
 
 type Props = {

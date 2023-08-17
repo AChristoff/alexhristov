@@ -29,6 +29,14 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.svg',
   },
+  metadataBase: new URL('https://www.alekshristov.com'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en',
+      'bg-BG': '/bg',
+    },
+  },
   robots: {
     index: true,
     follow: true,
