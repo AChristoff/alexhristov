@@ -9,7 +9,16 @@ export const metadata: Metadata = {
   description:
     'Dive into my portfolio to witness a rich blend of projects utilizing React, Next.js, TypeScript, and many more. From early drafting roles to front-end leadership, explore my journey.',
   openGraph: {
-    images: '/assets/home-cover.png',
+    title: 'Portfolio',
+    description:
+      'Dive into my portfolio to witness a rich blend of projects utilizing React, Next.js, TypeScript, and many more. From early drafting roles to front-end leadership, explore my journey.',
+    images: [
+      {
+        url: 'https://www.alekshristov.com/og_image_about.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   alternates: {
     canonical: '/portfolio',

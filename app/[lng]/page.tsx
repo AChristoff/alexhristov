@@ -1,8 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { Metadata } from 'next'
 import cover from '@/public/assets/home-cover.png'
 
 import { useTranslation } from '@/i18n'
+
+export const metadata: Metadata = {
+  openGraph: {
+    title: 'Aleksandar Hristov | Software Engineering',
+  },
+}
 
 type Props = {
   params: {

@@ -18,7 +18,7 @@ import { Lang } from '@/types'
 export const metadata: Metadata = {
   title: {
     default: `${siteConfig.name} | Software Engineering`,
-    template: `%s - ${siteConfig.name}`,
+    template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
@@ -40,6 +40,21 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  openGraph: {
+    title: {
+      default: `${siteConfig.name} | Software Engineering`,
+      template: `%s | ${siteConfig.name}`,
+    },
+    description: siteConfig.description,
+    type: 'website',
+    images: [
+      {
+        url: '/og_image_about.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 }
 

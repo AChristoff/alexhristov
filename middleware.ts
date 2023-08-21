@@ -8,7 +8,7 @@ acceptLanguage.languages(languages)
 export const config = {
 	// Matcher ignoring `/_next/`, `/api/` '/images' and '/public' subpaths
 	matcher: [
-		'/((?!api|_next/static|_next/image|robots.txt|sitemap.xml|public|assets|images|manifest.json|sw.js|favicon.ico|workbox-*).*)',
+		'/((?!api|_next/static|_next/image|robots.txt|sitemap.xml|public|assets|images|manifest.json|sw.js|favicon.ico|og_image_about.jpg|workbox-*).*)',
 		'/'
 	],
 };

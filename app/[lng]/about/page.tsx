@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: 'About',
   description:
     "I'm a dedicated developer with a proven track record, skilled in JavaScript, React, TypeScript, and more. Transforming concepts into realities for various companies and clients. Discover more about my work on this page.",
+  openGraph: {
+    title: 'About',
+    description:
+      "I'm a dedicated developer with a proven track record, skilled in JavaScript, React, TypeScript, and more. Transforming concepts into realities for various companies and clients. Discover more about my work on this page.",
+  },
   alternates: {
     canonical: '/about',
     languages: {
