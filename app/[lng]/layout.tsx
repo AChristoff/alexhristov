@@ -17,7 +17,7 @@ import { Lang } from '@/types'
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} - Software Engineering`,
+    default: `${siteConfig.name} | Software Engineering`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.ico',
   },
   metadataBase: new URL('https://www.alekshristov.com'),
   alternates: {

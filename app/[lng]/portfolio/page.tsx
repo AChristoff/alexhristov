@@ -1,10 +1,13 @@
-import { useTranslation } from '@/i18n'
-import FlipCard from '@/components/dedicated/portfolio/flip-card'
-import { PortfolioCard } from '@/types'
 import { Metadata } from 'next'
+import { useTranslation } from '@/i18n'
+import { PortfolioCard } from '@/types'
+
+import FlipCard from '@/components/dedicated/portfolio/flip-card'
 
 export const metadata: Metadata = {
   title: 'Portfolio',
+  description:
+    'Dive into my portfolio to witness a rich blend of projects utilizing React, Next.js, TypeScript, and many more. From early drafting roles to front-end leadership, explore my journey.',
   openGraph: {
     images: '/assets/home-cover.png',
   },
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
       'en-US': '/en/portfolio',
       'bg-BG': '/bg/portfolio',
     },
-  }
+  },
 }
 
 type Props = {

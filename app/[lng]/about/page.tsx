@@ -5,21 +5,23 @@ import cover from '@/public/assets/about-cover.png'
 
 import Certifications from '@/components/dedicated/about/certification-section'
 import Contacts from '@/components/dedicated/about/contacts-section'
-import Languages from '@/components/dedicated/about/languages-section'
 import Education from '@/components/dedicated/about/education-section'
+import Languages from '@/components/dedicated/about/languages-section'
 import Skills from '@/components/dedicated/about/skills-section'
-import WorkHistory from '@/components/dedicated/about/work-section'
 import VCard from '@/components/dedicated/about/v-card-section'
+import WorkHistory from '@/components/dedicated/about/work-section'
 
 export const metadata: Metadata = {
   title: 'About',
+  description:
+    "I'm a dedicated developer with a proven track record, skilled in JavaScript, React, TypeScript, and more. Transforming concepts into realities for various companies and clients. Discover more about my work on this page.",
   alternates: {
     canonical: '/about',
     languages: {
       'en-US': '/en/about',
       'bg-BG': '/bg/about',
     },
-  }
+  },
 }
 
 type Props = {
@@ -62,7 +64,6 @@ const AboutPage = async ({ params }: Props) => {
           <Skills t={t} />
 
           <Languages t={t} />
-
         </div>
         {/* ----- Right Col ----- */}
         <div className="flex-1">
@@ -71,8 +72,8 @@ const AboutPage = async ({ params }: Props) => {
           <Education t={t} />
 
           <Certifications t={t} lang={params?.lng} />
-          
-          <VCard t={t}/>
+
+          <VCard t={t} />
         </div>
       </section>
     </div>
