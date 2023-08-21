@@ -46,15 +46,7 @@ export const metadata: Metadata = {
       default: `${siteConfig.name} | Software Engineering`,
       template: `%s | ${siteConfig.name}`,
     },
-    description: siteConfig.description,
     type: 'website',
-    images: [
-      {
-        url: '/og_image_about.jpg',
-        width: 1200,
-        height: 630,
-      },
-    ],
   },
 }
 

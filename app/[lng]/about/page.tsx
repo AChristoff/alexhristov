@@ -19,6 +19,13 @@ export const metadata: Metadata = {
     title: 'About',
     description:
       "I'm a dedicated developer with a proven track record, skilled in JavaScript, React, TypeScript, and more. Transforming concepts into realities for various companies and clients. Discover more about my work on this page.",
+    images: [
+      {
+        url: '/og_image_about.jpg',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   alternates: {
     canonical: '/about',

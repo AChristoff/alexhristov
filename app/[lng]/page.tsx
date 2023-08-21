@@ -1,13 +1,21 @@
+import { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Metadata } from 'next'
-import cover from '@/public/assets/home-cover.png'
-
 import { useTranslation } from '@/i18n'
+import cover from '@/public/assets/home-cover.png'
 
 export const metadata: Metadata = {
   openGraph: {
     title: 'Aleksandar Hristov | Software Engineering',
+    description:
+      'Front-End Software Engineer with profound knowledge in React, Next.js, and beyond. Passionately committed to ongoing development and top-tier results. Based in Sofia. Reach out now.',
+    images: [
+      {
+        url: '/og_image_home.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
 }
 
@@ -39,7 +47,7 @@ const HomePage = async ({ params }: Props) => {
           height={0}
           sizes="100vw"
           placeholder="blur"
-          className='rounded-full mt-1'
+          className="rounded-full mt-1"
         />
         <h6 className="flex flex-wrap items-center justify-center uppercase tracking-[3px] font-semibold text-[0.8rem] md:text-[0.9rem]">
           <span className="text-muted-foreground">{t('more')}</span>
