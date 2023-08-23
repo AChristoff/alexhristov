@@ -48,6 +48,10 @@ export const metadata: Metadata = {
     },
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@aleksov101',
+  },
 }
 
 export async function generateStaticParams() {
