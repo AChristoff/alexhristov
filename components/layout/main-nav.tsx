@@ -2,11 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import {
-  usePathname,
-  useSearchParams,
-  useSelectedLayoutSegment,
-} from 'next/navigation'
+import { useSelectedLayoutSegment } from 'next/navigation'
 import { Lang, NavItem } from '@/types'
 
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
@@ -27,20 +23,20 @@ export function MainNav({ items, lng }: MainNavProps) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
   // Loading spinner controls - start
-  const [loading, setLoading] = useState(false)
-  const [visitedPaths, setVisitedPaths] = useState<string[]>([])
+  // const [loading, setLoading] = useState(false)
+  // const [visitedPaths, setVisitedPaths] = useState<string[]>([])
 
-  const pathname = usePathname()
-  const searchParams = useSearchParams()
-  useEffect(() => {
-    setLoading(false)
-  }, [pathname, searchParams])
+  // const pathname = usePathname()
+  // const searchParams = useSearchParams()
+  // useEffect(() => {
+  //   setLoading(false)
+  // }, [pathname, searchParams])
 
-  const updateLoadingState = (path: string) => {
-    if(!visitedPaths.includes(path)) setVisitedPaths((paths) => [...paths, path])
-    if(`/${lng}${path}`.includes(pathname) || visitedPaths.includes(path)) return
-    setLoading(true)
-  }
+  // const updateLoadingState = (path: string) => {
+  //   if(!visitedPaths.includes(path)) setVisitedPaths((paths) => [...paths, path])
+  //   if(`/${lng}${path}`.includes(pathname) || visitedPaths.includes(path)) return
+  //   setLoading(true)
+  // }
   // Loading spinner controls - end
 
   const activeSegment = useSelectedLayoutSegment()
@@ -58,7 +54,7 @@ export function MainNav({ items, lng }: MainNavProps) {
         <Link
           href={`/${activeLang}`}
           className="flex items-center space-x-2 ml-4 md:ml-0"
-          onClick={() => updateLoadingState(`/${activeLang}`)}
+          // onClick={() => updateLoadingState(`/${activeLang}`)}
         >
           <Icons.logo className="h-9" />
         </Link>
@@ -87,7 +83,7 @@ export function MainNav({ items, lng }: MainNavProps) {
                   mobile
                   onClick={(path) => {
                     setMobileNavOpen(false)
-                    updateLoadingState(path)
+                    // updateLoadingState(path)
                   }}
                 />
               </nav>
@@ -98,7 +94,7 @@ export function MainNav({ items, lng }: MainNavProps) {
                   <LanguageSwitcher
                     extraAction={(path) => {
                       setMobileNavOpen(false)
-                      updateLoadingState(path)
+                      // updateLoadingState(path)
                     }}
                   />
                 </span>
@@ -114,23 +110,23 @@ export function MainNav({ items, lng }: MainNavProps) {
               items={items}
               lng={lng}
               activeSegment={activeSegment}
-              onClick={(path) => updateLoadingState(path)}
+              // onClick={(path) => updateLoadingState(path)}
             />
           </nav>
         ) : null}
 
-        {loading && (
+        {/* {loading && (
           <div className="absolute top-[40vh] left-[48.5vw] flex justify-center items-center ">
             <div className='blur-md bg-background/80 w-14 h-14 rounded-full absolute'/>
             <Icons.logoSmall className=" h-16 animate-spin-slow" />
           </div>
-        )}
+        )} */}
       </div>
       <section className="hidden md:flex items-center space-x-1">
         <span className="border-l h-5 mr-2" />
         <ThemeToggle />
         <LanguageSwitcher
-          extraAction={(path) => updateLoadingState(path)}
+        // extraAction={(path) => updateLoadingState(path)}
         />
       </section>
     </>
