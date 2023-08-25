@@ -12,7 +12,7 @@ import {
 
 import { Button } from '@/components/ui/button'
 
-const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
+const LanguageSwitcher = ({extraAction}: {extraAction?: (params: any) => any}) => {
   const router = useRouter()
   const pathname = usePathname()
 
@@ -29,12 +29,13 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
         <DropdownMenuContent>
           <DropdownMenuItem
             onClick={() => {
-              extraAction && extraAction()
               let newPathname = '/en'
               if(pathname.includes('/bg')) {
                 newPathname =  pathname.replace('/bg', '/en')
               }
               router.push(newPathname)
+
+              extraAction && extraAction(newPathname)
             }}
             className={`flex items-center space-x-2 ${activeLang === 'en' ? 'text-primary font-semibold' : ''}`} 
           >
@@ -42,12 +43,13 @@ const LanguageSwitcher = ({extraAction}: {extraAction?: () => void}) => {
           </DropdownMenuItem>
           <DropdownMenuItem
              onClick={() => {
-              extraAction && extraAction()
               let newPathname = '/bg'
               if(pathname.includes('/en')) {
                 newPathname = pathname.replace('/en', '/bg')
               }
               router.push(newPathname)
+
+              extraAction && extraAction(newPathname)
             }}
             className={`flex items-center space-x-2 ${activeLang === 'bg' ? 'text-primary font-semibold' : ''}`} 
           >
