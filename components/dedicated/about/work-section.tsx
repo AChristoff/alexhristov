@@ -7,6 +7,7 @@ type Props = {
 
 const WorkSection = ({ t }: Props) => {
 
+  const fabrico: string[] = t('workHistory.jobs.fabrico.description', { returnObjects: true })
   const childish: string[] = t('workHistory.jobs.childish.description', { returnObjects: true })
   const atos: string[] = t('workHistory.jobs.atos.description', { returnObjects: true })
   const neterra: string[] = t('workHistory.jobs.neterra.description', { returnObjects: true })
@@ -22,6 +23,31 @@ const WorkSection = ({ t }: Props) => {
         </span>
         {t('workHistory.title')}
       </h5>
+
+      <ul className="mt-5">
+        <li className="uppercase font-bold tracking-[1px] mb-1">
+          {t('workHistory.jobs.fabrico.title')}
+        </li>
+        <li className="flex mb-5">
+          <span className="mr-auto">
+            {t('workHistory.jobs.fabrico.period')}
+          </span>{' '}
+          <a
+            type="button"
+            href={t('workHistory.jobs.fabrico.link')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
+          >
+            {t('workHistory.jobs.fabrico.employer')}
+          </a>
+        </li>
+        {fabrico.map((p, i) => (
+          <li className="left" key={i}>
+            {p}
+          </li>
+        ))}
+      </ul>
 
       <ul className="mt-5">
         <li className="uppercase font-bold tracking-[1px] mb-1">

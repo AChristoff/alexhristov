@@ -34,11 +34,11 @@ export default function FlipCard({
           {description}
         </p>
 
-        <section className="buttons text-center mt-auto">
+        <section className="buttons text-center mt-auto justify-center flex gap-2">
           {buttons.map((button, index) => (
             <Button
               variant="outline"
-              className="my-5 bg-slate-200 dark:bg-slate-700 border-slate-300 hover:bg-slate-800 hover:text-white"
+              className="my-5 p-0 bg-slate-200 dark:bg-slate-700 border-slate-300 hover:bg-slate-800 hover:text-white"
             >
               <a
                 key={index}
@@ -46,6 +46,7 @@ export default function FlipCard({
                 href={button.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                className='w-full h-full flex items-center justify-center px-4 py-2'
               >
                 {button.title}
               </a>

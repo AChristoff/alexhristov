@@ -28,10 +28,21 @@
   "workHistory": {
     "title": "Work History",
     "jobs": {
+      "fabrico": {
+        "title": "Lead Front End Developer - Enterprise scale",
+        "employer": "Fabrico SaaS",
+        "period": "2023 - до момента",
+        "link": "https://www.fabrico.io/en/",
+        "description": [
+          "Fabrico, an elite enterprise solution crafted by CHILDISH.AI, is specifically designed for factories aiming to elevate their operational standards. It's a cloud-based CMMS that oversees all maintenance processes in a production plant, integrating end-to-end maintenance strategies efficiently. Widely used by various manufacturing sectors, including giants like ABB, Fabrico offers tools for preventive and reactive maintenance, complemented by a proficient ticketing system. It aims to transition teams from paper to digital, boasting easy integration and a user-friendly interface. Serving industries from automotive to mining, this universal tool can be accessed globally through web and mobile platforms, ensuring secure, powerful, and intuitive operations for technical teams.",
+          "Writing code using specific programming languages and tools such as: ",
+          "React | Next.js | React Native | Redux | TypeScript | JavaScript | CSS3 | Sass | Tailwind | MUI | Bootstrap | HTML5 | React Testing Library | Git | Scrum | Linux"
+        ]
+      },
       "childish": {
         "title": "Lead Front-End Developer - React (Next.js) | React Native (Expo) | TypeScript",
-        "employer": "Childish Ltd.",
-        "period": "2022 - Present",
+        "employer": "CHILDISH.AI",
+        "period": "2022 - 2023",
         "link": "https://childish.ai/",
         "description": [
           "Designing and developing new features and functionality or improving old ones for existing systems.",

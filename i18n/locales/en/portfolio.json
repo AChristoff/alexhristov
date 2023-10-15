@@ -28,6 +28,22 @@
     },
     {
       "id": 3,
+      "img": "sika.png",
+      "title": "Sika Strength",
+      "description": "React Native / Typescript / Tailwind",
+      "buttons": [
+        {
+          "link": "https://play.google.com/store/apps/details?id=com.sikastrength.app&hl=en&gl=US",
+          "title": "Android"
+        },
+        {
+          "link": "https://apps.apple.com/us/app/sika-strength/id6461729292?platform=iphone",
+          "title": "iOS"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "img": "atos-mep.png",
       "title": "Atos MEP",
       "description": "React / Typescript / Redux / Sass / Jest",
@@ -39,7 +55,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": 5,
       "img": "cola.png",
       "title": "Image Recognition Tool",
       "description": "React / Redux / MUI",
@@ -51,7 +67,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 6,
       "img": "campic-bg.png",
       "title": "Campic-bg",
       "description": "MERN & Redux",
@@ -63,7 +79,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 7,
       "img": "casita-logo.png",
       "title": "Business Website",
       "description": "Vue.js & Sass",
@@ -75,25 +91,13 @@
       ]
     },
     {
-      "id": 7,
+      "id": 8,
       "img": "nete-logo.png",
       "title": "NETERRA Landing page",
       "description": "JavaScript, HTML, CSS",
       "buttons": [
         {
           "link": "https://neterra.net/business-services/",
-          "title": "View project"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "img": "gift-card.png",
-      "title": "Gift Card story",
-      "description": "Vue.js & Sass",
-      "buttons": [
-        {
-          "link": "https://neterra.tv/gift-card",
           "title": "View project"
         }
       ]
