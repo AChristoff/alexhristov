@@ -23,5 +23,11 @@ export type NavItem = {
   external?: boolean
 }
 
+export type Certificate = {
+  certification: string
+  year: string
+  links: string
+}
+
 
 export type TFunction = (key: string, options?: any) => any;

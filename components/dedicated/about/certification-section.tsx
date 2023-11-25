@@ -1,8 +1,8 @@
-import { TFunction } from '@/types'
+import { Certificate, TFunction } from '@/types'
 import { Icons } from '@/assets/icons'
 import { formatDate } from '@/assets/utils'
 
-const skills = [
+const skills: Certificate[] = [
   {
     certification: 'Programming Fundamentals',
     year: '2018-12',
@@ -69,6 +69,11 @@ const skills = [
     links:
       'https://www.udemy.com/certificate/UC-ed101dfe-ff5e-4ee7-a48b-247f60c1c218/',
   },
+  {
+    certification: 'TypeScript Simplified',
+    year: '2023-11',
+    links: 'https://www.alekshristov.com/assets/TypeScript-Simplified-certificate.jpg'
+  }
 ]
 
 type Props = {
