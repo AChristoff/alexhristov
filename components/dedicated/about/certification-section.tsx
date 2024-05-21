@@ -70,10 +70,15 @@ const skills: Certificate[] = [
       'https://www.udemy.com/certificate/UC-ed101dfe-ff5e-4ee7-a48b-247f60c1c218/',
   },
   {
-    certification: 'TypeScript Simplified',
+    certification: 'TypeScript',
     year: '2023-11',
-    links: 'https://www.alekshristov.com/assets/TypeScript-Simplified-certificate.jpg'
-  }
+    links: '/assets/TypeScript-Simplified-certificate.jpg'
+  },
+  {
+    certification: 'Next.js',
+    year: '2024-05',
+    links: '/assets/Nextjs-certificate.pdf'
+  },
 ]
 
 type Props = {
