@@ -79,6 +79,11 @@ const skills: Certificate[] = [
     year: '2024-05',
     links: '/assets/Nextjs-certificate.pdf'
   },
+  {
+    certification: 'Web Accessibility WCAG',
+    year: '2024-05',
+    links: 'https://www.udemy.com/certificate/UC-ffc3fd2e-d6f7-4c78-9249-46fe043044ac/'
+  },
 ]
 
 type Props = {

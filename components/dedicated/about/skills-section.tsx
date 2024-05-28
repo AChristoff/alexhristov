@@ -12,6 +12,7 @@ const skills = [
   { technology: 'NextJS', stars: 4 },
   { technology: 'React Native', stars: 4 },
   { technology: 'Redux', stars: 5 },
+  { technology: 'Accessibility', stars: 4 },
   { technology: 'NodeJS', stars: 3 },
   { technology: 'Express', stars: 3 },
   { technology: 'Mongo', stars: 4 },
