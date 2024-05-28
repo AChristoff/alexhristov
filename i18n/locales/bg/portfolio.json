@@ -80,12 +80,12 @@
     },
     {
       "id": 7,
-      "img": "casita-logo.png",
-      "title": "Бизнес сайт",
-      "description": "Vue.js & Sass",
+      "img": "maison-logo.png",
+      "title": "Сайт за резервации",
+      "description": "Next.js / Typescript / Tailwind",
       "buttons": [
         {
-          "link": "https://casita-bg.com/",
+          "link": "https://maisonsport.com/en",
           "title": "Виж проект"
         }
       ]
