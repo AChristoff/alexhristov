@@ -28,22 +28,42 @@
   "workHistory": {
     "title": "Work History",
     "jobs": {
-      "fabrico": {
-        "title": "Lead Front End Developer - Enterprise scale",
-        "employer": "Fabrico SaaS",
-        "period": "2023 - Present",
-        "link": "https://www.fabrico.io/en/",
+      "eviden": {
+        "title": "Senior Front-End Developer - React | React Native - Enterprise scale",
+        "employer": "EVIDEN",
+        "period": "2024 - Present",
+        "link": "https://eviden.com/",
         "description": [
-          "Fabrico, an elite enterprise solution crafted by CHILDISH.AI, is specifically designed for factories aiming to elevate their operational standards. It's a cloud-based CMMS that oversees all maintenance processes in a production plant, integrating end-to-end maintenance strategies efficiently. Widely used by various manufacturing sectors, including giants like ABB, Fabrico offers tools for preventive and reactive maintenance, complemented by a proficient ticketing system. It aims to transition teams from paper to digital, boasting easy integration and a user-friendly interface. Serving industries from automotive to mining, this universal tool can be accessed globally through web and mobile platforms, ensuring secure, powerful, and intuitive operations for technical teams.",
-          "Writing code using specific programming languages and tools such as: ",
-          "React | Next.js | React Native | Redux | TypeScript | JavaScript | CSS3 | Sass | Tailwind | MUI | Bootstrap | HTML5 | React Testing Library | Git | Scrum | Linux"
+          "Developed and maintained complex web applications with reusable, modular components following best practices in clean code and modern frontend frameworks like React, React Native/Expo, and Next.js.",
+          "Implemented state management solutions with Redux/RTK query for scalable, high-performance apps.",
+          "Utilized TypeScript and JavaScript (ES6+) to ensure robust, type-safe codebases.",
+          "Designed responsive and accessible user interfaces with CSS3, Sass, Tailwind, MUI, Shadcn/ui, and Blazor.",
+          "Built reusable, modular components following best practices in HTML5 and modern frontend frameworks.",
+          "Ensured code quality with React Testing Library, Playwright, and comprehensive unit and integration testing.",
+          "Integrated security best practices, including XSS protection, CSRF mitigation, and secure authentication workflows to ensure secure data handling in frontend components.",
+          "Collaborated in Agile/Scrum teams, contributing to sprint planning, code reviews, and continuous delivery.",
+          "Managed version control and code deployments using Git."
         ]
       },
-      "childish": {
-        "title": "Lead Front-End Developer - React (Next.js) | React Native (Expo) | TypeScript",
-        "employer": "CHILDISH.AI",
-        "period": "2022 - 2023",
-        "link": "https://childish.ai/",
+      "nexo": {
+        "title": "Front-End Developer - React | React Native - Crypto platform",
+        "employer": "Nexo",
+        "period": "06.2024 - 09.2024",
+        "link": "https://nexo.com/",
+        "description": [
+          "Leverage TypeScript and JavaScript to create robust, scalable, and maintainable codebases.",
+          "Develop and maintain high-performance, responsive web and mobile applications using React and React Native.",
+          "Ensure adherence to web standards and best practices with HTML5 for cross-browser compatibility and web accessibility.",
+          "Perform comprehensive testing with React Testing Library to uphold code quality and reliability.",
+          "Collaborate effectively with cross-functional teams in a Scrum environment to deliver innovative marketing and business intelligence solutions.",
+          "Utilize Git for version control to efficiently manage the codebase and track changes."
+        ]
+      },
+      "fabrico": {
+        "title": "Lead Front End Developer - Enterprise scale",
+        "employer": "Vector-labs.ai / Fabrico.io",
+        "period": "2022 - 2024",
+        "link": "https://vector-labs.ai/ - https://www.fabrico.io/en/",
         "description": [
           "Designing and developing new features and functionality or improving old ones for existing systems.",
           "Providing technical support for web applications, systems, and infrastructure as needed.",
@@ -73,7 +93,7 @@
         ]
       },
       "neterra": {
-        "title": "Front-End Developer - Vue/jQuery",
+        "title": "Front-End Developer - Vue.js | jQuery",
         "employer": "NETERRA Ltd.",
         "period": "2019 - 2021",
         "link": "https://neterra.net",

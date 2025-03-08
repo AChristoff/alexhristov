@@ -7,8 +7,9 @@ type Props = {
 
 const WorkSection = ({ t }: Props) => {
 
+  const eviden: string[] = t('workHistory.jobs.eviden.description', { returnObjects: true })
+  const nexo: string[] = t('workHistory.jobs.nexo.description', { returnObjects: true })
   const fabrico: string[] = t('workHistory.jobs.fabrico.description', { returnObjects: true })
-  const childish: string[] = t('workHistory.jobs.childish.description', { returnObjects: true })
   const atos: string[] = t('workHistory.jobs.atos.description', { returnObjects: true })
   const neterra: string[] = t('workHistory.jobs.neterra.description', { returnObjects: true })
   const walltopiaPM: string[] = t('workHistory.jobs.walltopia.pm.description', { returnObjects: true })
@@ -23,6 +24,56 @@ const WorkSection = ({ t }: Props) => {
         </span>
         {t('workHistory.title')}
       </h5>
+
+      <ul className="mt-5">
+        <li className="uppercase font-bold tracking-[1px] mb-1">
+          {t('workHistory.jobs.eviden.title')}
+        </li>
+        <li className="flex mb-5">
+          <span className="mr-auto">
+            {t('workHistory.jobs.eviden.period')}
+          </span>{' '}
+          <a
+            type="button"
+            href={t('workHistory.jobs.eviden.link')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
+          >
+            {t('workHistory.jobs.eviden.employer')}
+          </a>
+        </li>
+        {eviden.map((p, i) => (
+          <li className="left" key={i}>
+            {p}
+          </li>
+        ))}
+      </ul>
+
+      <ul className="mt-5">
+        <li className="uppercase font-bold tracking-[1px] mb-1">
+          {t('workHistory.jobs.nexo.title')}
+        </li>
+        <li className="flex mb-5">
+          <span className="mr-auto">
+            {t('workHistory.jobs.nexo.period')}
+          </span>{' '}
+          <a
+            type="button"
+            href={t('workHistory.jobs.nexo.link')}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline hover:text-primary"
+          >
+            {t('workHistory.jobs.nexo.employer')}
+          </a>
+        </li>
+        {nexo.map((p, i) => (
+          <li className="left" key={i}>
+            {p}
+          </li>
+        ))}
+      </ul>
 
       <ul className="mt-5">
         <li className="uppercase font-bold tracking-[1px] mb-1">
@@ -43,31 +94,6 @@ const WorkSection = ({ t }: Props) => {
           </a>
         </li>
         {fabrico.map((p, i) => (
-          <li className="left" key={i}>
-            {p}
-          </li>
-        ))}
-      </ul>
-
-      <ul className="mt-5">
-        <li className="uppercase font-bold tracking-[1px] mb-1">
-          {t('workHistory.jobs.childish.title')}
-        </li>
-        <li className="flex mb-5">
-          <span className="mr-auto">
-            {t('workHistory.jobs.childish.period')}
-          </span>{' '}
-          <a
-            type="button"
-            href={t('workHistory.jobs.childish.link')}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:underline hover:text-primary"
-          >
-            {t('workHistory.jobs.childish.employer')}
-          </a>
-        </li>
-        {childish.map((p, i) => (
           <li className="left" key={i}>
             {p}
           </li>
